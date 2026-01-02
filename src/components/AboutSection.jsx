@@ -123,16 +123,15 @@ export const AboutSection = () => {
 
             {/* Team Image Placeholder */}
             <div className="relative bg-white rounded-2xl p-8 shadow-lg border border-slate-200 text-center">
-
               <div className="w-full h-32 bg-gradient-to-r from-teal-100 via-emerald-100 to-teal-100 rounded-xl flex items-center justify-center mb-4">
                 {/* Small round images in one card */}
-                <div className="flex flex-wrap justify-center gap-6 mb-4">
+                <div className="flex justify-center gap-3 sm:gap-6 mb-4">
                   {mockData.teamMembers.map((member, index) => (
                     <img
                       key={index}
                       src={member.image}
                       alt={member.name}
-                      className="w-24 h-24 rounded-full object-cover border-2 border-teal-200"
+                      className="w-16 h-16 sm:w-24 sm:h-24 rounded-full object-cover border-2 border-teal-200 flex-shrink-0"
                     />
                   ))}
                 </div>

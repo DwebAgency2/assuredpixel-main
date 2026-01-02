@@ -31,7 +31,7 @@ export const Header = () => {
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <h1 className="text-2xl font-bold text-slate-800">
-                Assured <span className="text-teal-600">Pixel</span>
+                Assured<span className="text-teal-600">Pixel</span>
               </h1>
             </div>
           </div>

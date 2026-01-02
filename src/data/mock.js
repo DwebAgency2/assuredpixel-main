@@ -1,13 +1,13 @@
-// Mock data for ElevateRank Digital agency website
+
 
 export const mockData = {
   // Hero Section
   heroContent: {
-    headline: "We Don't Just Drive Traffic — We Transform Businesses",
+    headline: "We Don’t Just Drive Traffic — We Help Businesses Grow",
     subheadline:
-      "AssuredPixel specializes in SEO ranking and website restructuring that helps USA businesses rank higher, convert better, and grow faster.",
-    ctaText: "Book a Free SEO Audit",
-    ctaSubtext: "Discover how we can boost your online presence",
+      "AssuredPixel helps USA-based businesses improve visibility, increase conversions, and scale sustainably through SEO, website restructuring, content, paid ads, and cloud-driven systems.",
+    ctaText: "Book a Free Growth Audit",
+    ctaSubtext: "See where you’re losing opportunities and how to fix it",
   },
 
   // Services
@@ -16,19 +16,19 @@ export const mockData = {
       id: 1,
       title: "Business Branding",
       description:
-        "Your brand is more than just a logo - the identity shapes how people see and connect with your business.In assuredPixed, we help you define a clear brand voice,visual identity, and strategy that reflect your value and resonate with your audience.",
+        "Your brand is more than a logo. It’s how people recognize, trust, and remember your business. At AssuredPixel, we help you define a clear brand voice, visual identity, and positioning that reflects your value and connects with the right audience.",
       icon: "Brush",
       features: [
         "Logo & visual identity design",
         "Brand voice & messaging strategy",
-        "Comprehensive brand guidelines",
+        "Clear and consistent brand guidelines",
       ],
     },
     {
       id: 2,
       title: "Website Creation",
       description:
-        "Your website often gives customers the first impression of your brand. We design and develop visually engaging website that are easy to navigate and build to convert visitors into customers. Every site we create is responsive,fast and aligned with your business goals.",
+        "Your website is often the first interaction customers have with your business. We design and develop visually engaging, easy-to-navigate websites built to convert visitors into leads and customers. Every site is fast, responsive, and aligned with your business goals.",
       icon: "Globe",
       features: [
         "Custom responsive web design",
@@ -38,13 +38,13 @@ export const mockData = {
     },
     {
       id: 3,
-      title: "Search Engine Optimization(SEO)",
+      title: "Search Engine Optimization (SEO)",
       description:
-        "Getting found online starts with your website itself. Our on-page SEO strategy focus on the elements you can control, such as keywords, headings, metadata, and site structure. By aligning these pieces with what your audience is searching for, we help your business rank higher and attract qualified visitors,and build lasting visibility without relying on outside factor.",
+        "Getting found online starts with a solid foundation. Our SEO approach focuses on on-page and technical improvements such as keywords, headings, metadata, and site structure. By aligning your website with real search intent, we help you rank higher, attract qualified visitors, and build long-term visibility.",
       icon: "Search",
       features: [
         "On-page keyword optimization",
-        "Technical site audit",
+        "Technical SEO audits",
         "Improved site structure & metadata",
       ],
     },
@@ -52,24 +52,23 @@ export const mockData = {
       id: 4,
       title: "Content Writing",
       description:
-        "Strong content is the foundation of effective digital marketing. We create clear, engaging,and purposeful content authority,and connects with your audience. From blogs to web copy, Our writing is designed to inform,inspire and convert.",
+        "Strong content builds trust and drives action. We create clear, engaging, and purposeful content that explains your value, supports SEO, and connects with your audience. From website copy to blogs, our content is designed to inform, engage, and convert.",
       icon: "FileText",
       features: [
-        "UX/UI redesign",
-        "Conversion optimization",
-        "Site architecture",
-        "Performance enhancement",
+        "Website copywriting",
+        "SEO-friendly blog content",
+        "Content structure & clarity improvements",
       ],
     },
     {
       id: 5,
       title: "Social Media Management",
       description:
-        "Social platforms are powerful tools for building relationships with your audience. We manage your social presence by creating and sharing content that sparks engagement,strengthens your brand and drives measurable results. Our approach ensures your voice is consistent and community grows.",
+        "Social media is about building real relationships, not just posting content. We manage your social presence by creating and sharing content that drives engagement, strengthens brand awareness, and supports your broader marketing goals.",
       icon: "MessageCircle",
       features: [
         "Content creation & scheduling",
-        "Community engagement & growth",
+        "Audience engagement & growth",
         "Performance tracking & reporting",
       ],
     },
@@ -77,12 +76,12 @@ export const mockData = {
       id: 6,
       title: "Cloud Integration",
       description:
-        "Modern businesses need systems that are connected,flexible and efficient. Our cloud integration services help streamline your collaboration,and ensure your digital tools work seamlessly. This creates a scalable foundation for growth and innovation",
+        "Modern businesses rely on connected, flexible systems. Our cloud integration services help streamline workflows, improve collaboration, and ensure your tools work seamlessly together, creating a scalable foundation for growth.",
       icon: "Cloud",
       features: [
-        "Seamless app & tool integration",
+        "App & tool integration",
         "Secure data migration",
-        "Scalable cloud architecture",
+        "Scalable cloud infrastructure",
       ],
     },
   ],
@@ -93,8 +92,8 @@ export const mockData = {
       id: 1,
       clientName: "Local Home Services Co.",
       industry: "Home Services",
-      challenge: "Low local visibility and poor mobile experience",
-      solution: "Complete website restructure + local SEO optimization",
+      challenge: "Low local search visibility and a poor mobile experience",
+      solution: "Complete website restructure combined with local SEO optimization",
       results: {
         organicTraffic: "+187%",
         keywordRankings: "+45 first-page keywords",
@@ -108,8 +107,8 @@ export const mockData = {
       id: 2,
       clientName: "E-commerce Fashion Brand",
       industry: "E-commerce",
-      challenge: "Poor search rankings and low conversion rates",
-      solution: "Technical SEO + conversion-focused redesign",
+      challenge: "Weak search rankings and low conversion rates",
+      solution: "Technical SEO improvements and a conversion-focused website redesign",
       results: {
         organicTraffic: "+156%",
         keywordRankings: "+62 first-page keywords",
@@ -123,8 +122,8 @@ export const mockData = {
       id: 3,
       clientName: "Professional Services Firm",
       industry: "Professional Services",
-      challenge: "Limited online presence and outdated website",
-      solution: "Complete digital transformation + SEO strategy",
+      challenge: "Limited online visibility and an outdated website",
+      solution: "Full digital transformation supported by a long-term SEO strategy",
       results: {
         organicTraffic: "+298%",
         keywordRankings: "+73 first-page keywords",
@@ -144,7 +143,7 @@ export const mockData = {
       company: "Mitchell's Home Solutions",
       role: "Business Owner",
       content:
-        "AssuredPixel completely transformed our online presence. We went from invisible to dominating local search results. Our leads increased by over 200% in just 6 months!",
+        "AssuredPixel completely transformed our online presence. We went from barely visible online to dominating local search results. Our leads increased by over 200% within six months.",
       rating: 5,
       avatar:
         "https://images.unsplash.com/photo-1494790108755-2616b612b647?w=100&h=100&fit=crop&crop=face",
@@ -155,7 +154,7 @@ export const mockData = {
       company: "Chen Consulting Group",
       role: "Managing Director",
       content:
-        "The team at AssuredPixel doesn't just talk about results - they deliver them. Our website now ranks on the first page for our most important keywords, and our conversion rate has doubled.",
+        "What stood out was their clarity and execution. Our website now ranks on the first page for key search terms, and our conversion rate has doubled since working with AssuredPixel.",
       rating: 5,
       avatar:
         "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
@@ -166,7 +165,7 @@ export const mockData = {
       company: "Rodriguez Legal Services",
       role: "Attorney & Founder",
       content:
-        "Professional, results-driven, and transparent. AssuredPixel helped us restructure our entire digital strategy. We're now getting qualified leads every single day through organic search.",
+        "Professional, transparent, and results-focused. AssuredPixel helped restructure our entire digital presence, and we now receive qualified leads consistently through organic search.",
       rating: 5,
       avatar:
         "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&h=100&fit=crop&crop=face",
@@ -177,10 +176,10 @@ export const mockData = {
   blogPosts: [
     {
       id: 1,
-      title: "10 SEO Mistakes That Are Killing Your Rankings in 2024",
+      title: "10 SEO Mistakes That Are Hurting Your Rankings in 2024",
       excerpt:
-        "Discover the most common SEO mistakes businesses make and learn how to fix them to improve your search rankings dramatically.",
-      author: "ElevateRank Team",
+        "Learn the most common SEO mistakes businesses make and how to fix them to improve search visibility and long-term rankings.",
+      author: "AssuredPixel Team",
       date: "2024-01-15",
       readTime: "8 min read",
       category: "SEO Tips",
@@ -189,10 +188,10 @@ export const mockData = {
     },
     {
       id: 2,
-      title: "How Website Speed Affects Your SEO Rankings",
+      title: "How Website Speed Impacts SEO and Conversions",
       excerpt:
-        "Learn why site speed is crucial for SEO success and discover actionable strategies to make your website lightning-fast.",
-      author: "ElevateRank Team",
+        "Understand why site speed matters for SEO and user experience, and learn practical ways to improve performance.",
+      author: "AssuredPixel Team",
       date: "2024-01-10",
       readTime: "6 min read",
       category: "Technical SEO",
@@ -201,10 +200,10 @@ export const mockData = {
     },
     {
       id: 3,
-      title: "Local SEO Strategies for Small Businesses",
+      title: "Local SEO Strategies That Help Small Businesses Compete",
       excerpt:
-        "Master local SEO with proven strategies that help small businesses dominate their local market and attract more customers.",
-      author: "ProRank Team",
+        "Proven local SEO strategies that help small businesses improve visibility, attract nearby customers, and grow consistently.",
+      author: "AssuredPixel Team",
       date: "2025-08-25",
       readTime: "12 min read",
       category: "Local SEO",
@@ -215,10 +214,10 @@ export const mockData = {
 
   // Company Info
   companyInfo: {
-    name: "Assuredpixel",
+    name: "AssuredPixel",
     tagline: "Transform Your Online Presence",
     description:
-      "We specialize in SEO ranking and website restructuring services for USA-based businesses, helping them rank higher, convert better, and grow faster.",
+      "We specialize in SEO, website development, content strategy, paid ads, and cloud integration for USA-based businesses looking for measurable growth.",
     founded: "2020",
     clientsServed: "150+",
     averageGrowth: "180%",
@@ -229,9 +228,10 @@ export const mockData = {
     email: "hello@prorankrankdigital.com",
     phone: "+1 (555) 123-4567",
     address: "123 Digital Avenue, Austin, TX 78701",
-    hours: "Monday - Friday: 9:00 AM - 6:00 PM CST",
+    hours: "Monday – Friday: 9:00 AM – 6:00 PM CST",
   },
 
+  // Team Members
   teamMembers: [
     {
       id: 1,

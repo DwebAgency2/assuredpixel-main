@@ -1,6 +1,22 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { CheckCircle, Target, Users, Award } from "lucide-react";
-import { mockData } from "../data/mock";
+
+// Mock data for demo
+const mockData = {
+  companyInfo: {
+    description:
+      "AssuredPixel transforms underperforming websites into high-converting digital assets, consistently generating qualified leads for USA-based businesses.",
+    founded: "2020",
+    clientsServed: "150+",
+    averageGrowth: "180%",
+  },
+  teamMembers: [
+    { name: "John Doe", image: "https://i.pravatar.cc/150?img=33" },
+    { name: "Jane Smith", image: "https://i.pravatar.cc/150?img=47" },
+    { name: "Mike Johnson", image: "https://i.pravatar.cc/150?img=12" },
+  ],
+};
 
 export const AboutSection = () => {
   const { companyInfo } = mockData;
@@ -10,19 +26,19 @@ export const AboutSection = () => {
       icon: Target,
       title: "Results-Driven",
       description:
-        "We focus on measurable outcomes that directly impact your business growth and revenue.",
+        "We prioritize measurable outcomes that directly drive your business growth and ROI.",
     },
     {
       icon: Users,
       title: "Client-Centric",
       description:
-        "Your success is our success. We build long-term partnerships based on trust and transparency.",
+        "Your success is our mission. We build long-term partnerships based on transparency and trust.",
     },
     {
       icon: Award,
       title: "Proven Expertise",
       description:
-        "Years of experience helping USA businesses dominate their local and national markets.",
+        "Years of experience helping USA businesses increase visibility, traffic, and revenue online.",
     },
   ];
 
@@ -33,116 +49,263 @@ export const AboutSection = () => {
     "4+ years of proven results",
   ];
 
+  // Animation variants
+  const fadeInUp = {
+    hidden: { opacity: 0, y: 40 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut",
+      },
+    },
+  };
+
+  const fadeInLeft = {
+    hidden: { opacity: 0, x: -50 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.7,
+        ease: "easeOut",
+      },
+    },
+  };
+
+  const fadeInRight = {
+    hidden: { opacity: 0, x: 50 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.7,
+        ease: "easeOut",
+      },
+    },
+  };
+
+  const staggerContainer = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.15,
+        delayChildren: 0.2,
+      },
+    },
+  };
+
+  const scaleIn = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        duration: 0.5,
+        ease: "easeOut",
+      },
+    },
+  };
+
   return (
-    <section id="about" className="py-20 bg-slate-50">
+    <section
+      id="about"
+      className="py-20 bg-slate-50 dark:bg-slate-900 transition-colors duration-500"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Content */}
-          <div className="space-y-8">
+          {/* Content - Left Side */}
+          <motion.div
+            className="space-y-8"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={staggerContainer}
+          >
             <div>
-              <div className="inline-flex items-center px-4 py-2 bg-teal-100 text-teal-800 rounded-full text-sm font-medium mb-4">
+              <motion.div
+                variants={fadeInUp}
+                className="inline-flex items-center px-4 py-2 bg-teal-100 dark:bg-teal-900/50 text-teal-800 dark:text-teal-300 rounded-full text-sm font-medium mb-4"
+              >
                 About Assuredpixel
-              </div>
-              <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-6">
+              </motion.div>
+
+              <motion.h2
+                variants={fadeInUp}
+                className="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-white mb-6"
+              >
                 Your Partner in Digital Success
-              </h2>
-              <p className="text-xl text-slate-600 leading-relaxed mb-6">
+              </motion.h2>
+
+              <motion.p
+                variants={fadeInUp}
+                className="text-xl text-slate-600 dark:text-slate-300 leading-relaxed mb-6"
+              >
                 {companyInfo.description}
-              </p>
-              <p className="text-lg text-slate-600 leading-relaxed">
+              </motion.p>
+
+              <motion.p
+                variants={fadeInUp}
+                className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed"
+              >
                 Founded in {companyInfo.founded}, we've helped over{" "}
                 {companyInfo.clientsServed} businesses transform their online
-                presence through strategic SEO optimization and comprehensive
-                website restructuring. Our data-driven approach consistently
-                delivers an average of {companyInfo.averageGrowth} growth in
-                organic traffic and lead generation.
-              </p>
+                presence through strategic SEO, website restructuring, and
+                content optimization. On average, our clients experience{" "}
+                {companyInfo.averageGrowth} growth in organic traffic and
+                qualified lead generation.
+              </motion.p>
             </div>
 
             {/* Achievements */}
-            <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-slate-900">
+            <motion.div className="space-y-4" variants={fadeInUp}>
+              <h3 className="text-2xl font-bold text-slate-900 dark:text-white">
                 Why Choose Us?
               </h3>
-              <div className="grid grid-cols-1 gap-3">
+              <motion.div
+                className="grid grid-cols-1 gap-3"
+                variants={staggerContainer}
+              >
                 {achievements.map((achievement, index) => (
-                  <div key={index} className="flex items-center space-x-3">
-                    <CheckCircle className="w-5 h-5 text-teal-600 flex-shrink-0" />
-                    <span className="text-slate-700 font-medium">
+                  <motion.div
+                    key={index}
+                    className="flex items-center space-x-3"
+                    variants={fadeInLeft}
+                    whileHover={{ x: 5, transition: { duration: 0.2 } }}
+                  >
+                    <CheckCircle className="w-5 h-5 text-teal-600 dark:text-teal-400 flex-shrink-0" />
+                    <span className="text-slate-700 dark:text-slate-300 font-medium">
                       {achievement}
                     </span>
-                  </div>
+                  </motion.div>
                 ))}
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
 
             {/* CTA */}
-            <div className="pt-4">
-              <button
+            <motion.div className="pt-4" variants={fadeInUp}>
+              <motion.button
                 onClick={() =>
                   document
                     .querySelector("#contact")
-                    .scrollIntoView({ behavior: "smooth" })
+                    ?.scrollIntoView({ behavior: "smooth" })
                 }
-                className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 hover:shadow-lg hover:scale-105"
+                className="bg-teal-600 hover:bg-teal-700 dark:bg-teal-500 dark:hover:bg-teal-600 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 hover:shadow-lg"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
               >
                 Partner With Us Today
-              </button>
-            </div>
-          </div>
+              </motion.button>
+            </motion.div>
+          </motion.div>
 
-          {/* Values Cards */}
-          <div className="space-y-6">
-            <h3 className="text-2xl font-bold text-slate-900 text-center lg:text-left">
+          {/* Values Cards - Right Side */}
+          <motion.div
+            className="space-y-6"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={staggerContainer}
+          >
+            <motion.h3
+              variants={fadeInUp}
+              className="text-2xl font-bold text-slate-900 dark:text-white text-center lg:text-left"
+            >
               Our Core Values
-            </h3>
+            </motion.h3>
 
             {values.map((value, index) => {
               const IconComponent = value.icon;
               return (
-                <div
+                <motion.div
                   key={index}
-                  className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-slate-200 hover:border-teal-200 group"
+                  variants={fadeInRight}
+                  whileHover={{
+                    scale: 1.05,
+                    y: -5,
+                    transition: { duration: 0.3 },
+                  }}
+                  className="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-slate-200 dark:border-slate-700 hover:border-teal-200 dark:hover:border-teal-600 group cursor-pointer"
                 >
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-teal-100 rounded-xl flex items-center justify-center group-hover:bg-teal-600 transition-colors duration-300 flex-shrink-0">
-                      <IconComponent className="w-6 h-6 text-teal-600 group-hover:text-white transition-colors duration-300" />
-                    </div>
+                    <motion.div
+                      className="w-12 h-12 bg-teal-100 dark:bg-teal-900/50 rounded-xl flex items-center justify-center group-hover:bg-teal-600 dark:group-hover:bg-teal-500 transition-colors duration-300 flex-shrink-0"
+                      whileHover={{ rotate: 360 }}
+                      transition={{ duration: 0.6 }}
+                    >
+                      <IconComponent className="w-6 h-6 text-teal-600 dark:text-teal-400 group-hover:text-white transition-colors duration-300" />
+                    </motion.div>
                     <div>
-                      <h4 className="text-xl font-bold text-slate-900 mb-2 group-hover:text-teal-900 transition-colors duration-300">
+                      <h4 className="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-teal-900 dark:group-hover:text-teal-300 transition-colors duration-300">
                         {value.title}
                       </h4>
-                      <p className="text-slate-600 leading-relaxed">
+                      <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
                         {value.description}
                       </p>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               );
             })}
 
             {/* Team Image Placeholder */}
-            <div className="relative bg-white rounded-2xl p-8 shadow-lg border border-slate-200 text-center">
-              <div className="w-full h-32 bg-gradient-to-r from-teal-100 via-emerald-100 to-teal-100 rounded-xl flex items-center justify-center mb-4">
+            <motion.div
+              variants={scaleIn}
+              whileHover={{ scale: 1.02 }}
+              className="relative bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-slate-200 dark:border-slate-700 text-center transition-colors duration-300"
+            >
+              <div className="w-full h-32 bg-gradient-to-r from-teal-100 via-emerald-100 to-teal-100 dark:from-teal-900/30 dark:via-emerald-900/30 dark:to-teal-900/30 rounded-xl flex items-center justify-center mb-4">
                 {/* Small round images in one card */}
-                <div className="flex justify-center gap-3 sm:gap-6 mb-4">
+                <motion.div
+                  className="flex justify-center gap-3 sm:gap-6 mb-4"
+                  variants={staggerContainer}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                >
                   {mockData.teamMembers.map((member, index) => (
-                    <img
+                    <motion.img
                       key={index}
                       src={member.image}
                       alt={member.name}
-                      className="w-16 h-16 sm:w-24 sm:h-24 rounded-full object-cover border-2 border-teal-200 flex-shrink-0"
+                      className="w-16 h-16 sm:w-24 sm:h-24 rounded-full object-cover border-2 border-teal-200 dark:border-teal-600 flex-shrink-0"
+                      variants={{
+                        hidden: { opacity: 0, scale: 0, rotate: -180 },
+                        visible: {
+                          opacity: 1,
+                          scale: 1,
+                          rotate: 0,
+                          transition: {
+                            duration: 0.6,
+                            delay: index * 0.15,
+                            ease: "easeOut",
+                          },
+                        },
+                      }}
+                      whileHover={{
+                        scale: 1.15,
+                        rotate: 5,
+                        transition: { duration: 0.3 },
+                      }}
                     />
                   ))}
-                </div>
+                </motion.div>
               </div>
 
-              <p className="text-slate-600 text-sm">
+              <motion.p
+                className="text-slate-600 dark:text-slate-400 text-sm"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.6, duration: 0.5 }}
+              >
                 Meet our dedicated team of SEO experts and digital strategists
-                committed to your success.
-              </p>
-            </div>
-          </div>
+                committed to your business growth.
+              </motion.p>
+            </motion.div>
+          </motion.div>
         </div>
       </div>
     </section>

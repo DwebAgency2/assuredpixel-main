@@ -1,7 +1,7 @@
 {
-  "name": "prorank",
+  "name": "assuredpixel",
   "version": "1.0.0",
-  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "description": "assuredpixel Digital specializes in SEO ranking and website restructuring that helps USA businesses rank higher, convert better, and grow faster.",
   "type": "module",
   "scripts": {
     "dev": "vite",

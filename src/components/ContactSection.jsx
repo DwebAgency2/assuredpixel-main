@@ -80,7 +80,7 @@ export const ContactSection = () => {
 
       if (response.ok) {
         toast.success(
-          "Thank you! We'll contact you within 24 hours to schedule your free SEO audit.",
+          "Thank you! We'll contact you within 10 minutes to schedule your free SEO audit.",
           {
             duration: 5000,
           }

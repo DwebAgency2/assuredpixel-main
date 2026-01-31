@@ -9,7 +9,7 @@ const mockData = {
   heroContent: {
     headline: "Grow Your Business with Strategy-Led Digital Marketing",
     subheadline:
-      "We help businesses attract the right audience, improve conversions, and scale with SEO, web development, paid ads, branding, and data-driven marketing.",
+      "We help small businesses and startups in the USA attract the right audience, improve conversions, and scale with SEO, web design, and data-driven marketing strategy.",
     ctaText: "Get Your Free SEO Audit",
     ctaSubtext: "✨ No pressure • Clear next steps • Practical recommendations",
   },

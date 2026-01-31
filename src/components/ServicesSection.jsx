@@ -32,21 +32,21 @@ const mockData = {
   services: [
     {
       id: 1,
-      title: "Business Branding",
+      title: "Business Branding & Strategy",
       description:
-        "Your brand is more than a logo. It’s how people recognize, trust, and remember your business. At AssuredPixel, we help you define a clear brand voice, visual identity, and positioning that reflects your value and connects with the right audience.",
+        "Your brand is more than a logo. It’s how people recognize, trust, and remember your business. We help startups and small businesses define a clear brand voice, visual identity, and positioning that reflects your value and connects with the right audience.",
       icon: "Brush",
       features: [
         "Logo & visual identity design",
         "Brand voice & messaging strategy",
-        "Clear and consistent brand guidelines",
+        "Brand identity for startups",
       ],
     },
     {
       id: 2,
-      title: "Website Creation",
+      title: "Responsive Web Design Services",
       description:
-        "Your website is often the first interaction customers have with your business. We design and develop visually engaging, easy-to-navigate websites built to convert visitors into leads and customers. Every site is fast, responsive, and aligned with your business goals.",
+        "Your website is your 24/7 salesperson. We design and develop conversion-focused, responsive websites that look great on any device. From fast-loading WordPress sites to custom builds, we ensure your site turns visitors into leads.",
       icon: "Globe",
       features: [
         "Custom responsive web design",
@@ -56,26 +56,26 @@ const mockData = {
     },
     {
       id: 3,
-      title: "Search Engine Optimization (SEO)",
+      title: "Technical SEO & Audit Services",
       description:
-        "Getting found online starts with a solid foundation. Our SEO approach focuses on on-page and technical improvements such as keywords, headings, metadata, and site structure. By aligning your website with real search intent, we help you rank higher, attract qualified visitors, and build long-term visibility.",
+        "Stop guessing why you aren't ranking. Our comprehensive SEO services include technical audits, keyword optimization, and on-page strategy to help your small business rank higher on Google and attract organic traffic.",
       icon: "Search",
       features: [
-        "On-page keyword optimization",
         "Technical SEO audits",
-        "Improved site structure & metadata",
+        "On-page keyword optimization",
+        "Local SEO for small business",
       ],
     },
     {
       id: 4,
-      title: "Content Writing",
+      title: "SEO Content Writing & Strategy",
       description:
-        "Strong content builds trust and drives action. We create clear, engaging, and purposeful content that explains your value, supports SEO, and connects with your audience. From website copy to blogs, our content is designed to inform, engage, and convert.",
+        "Content that ranks and converts. We create clear, engaging content that explains your value and satisfies user intent. From website copy to SEO-optimized blog posts, we help you build authority in your niche.",
       icon: "FileText",
       features: [
         "Website copywriting",
         "SEO-friendly blog content",
-        "Content structure & clarity improvements",
+        "Content strategy & planning",
       ],
     },
     {

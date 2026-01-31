@@ -1,4 +1,4 @@
-/* eslint-env node */
+import animate from "tailwindcss-animate";
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -7,6 +7,7 @@ export default {
     "./src/**/*.{js,jsx,ts,tsx}",
     "./index.html"
   ],
+  // ... (rest of file)
   theme: {
     extend: {
       borderRadius: {
@@ -80,5 +81,5 @@ export default {
       }
     }
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [animate],
 }

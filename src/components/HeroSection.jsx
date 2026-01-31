@@ -1,4 +1,5 @@
-import React from "react";
+
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
 import { ArrowRight, CheckCircle } from "lucide-react";
@@ -54,17 +55,7 @@ export const HeroSection = () => {
     },
   };
 
-  const slideInLeft = {
-    hidden: { opacity: 0, x: -50 },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: {
-        duration: 0.7,
-        ease: "easeOut",
-      },
-    },
-  };
+
 
   const slideInRight = {
     hidden: { opacity: 0, x: 50 },

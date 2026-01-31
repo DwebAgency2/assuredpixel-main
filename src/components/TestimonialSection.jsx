@@ -91,13 +91,14 @@ export const TestimonialsSection = () => {
       { threshold: 0.2 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    const currentSection = sectionRef.current;
+    if (currentSection) {
+      observer.observe(currentSection);
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (currentSection) {
+        observer.unobserve(currentSection);
       }
     };
   }, []);
@@ -125,9 +126,8 @@ export const TestimonialsSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div
-          className={`text-center mb-16 transition-all duration-1000 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-          }`}
+          className={`text-center mb-16 transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+            }`}
         >
           <div className="inline-flex items-center px-4 py-2 bg-amber-100 dark:bg-amber-900/30 text-amber-800 dark:text-amber-300 rounded-full text-sm font-medium mb-4 transition-colors duration-300">
             Client Testimonials
@@ -143,9 +143,8 @@ export const TestimonialsSection = () => {
 
         {/* Carousel Container */}
         <div
-          className={`relative max-w-5xl mx-auto mb-16 transition-all duration-1000 delay-300 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-          }`}
+          className={`relative max-w-5xl mx-auto mb-16 transition-all duration-1000 delay-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+            }`}
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
@@ -173,13 +172,12 @@ export const TestimonialsSection = () => {
                 {testimonials.map((testimonial, index) => (
                   <div
                     key={testimonial.id}
-                    className={`absolute transition-all duration-700 ease-in-out ${
-                      index === currentIndex
+                    className={`absolute transition-all duration-700 ease-in-out ${index === currentIndex
                         ? "opacity-100 translate-x-0 scale-100"
                         : index < currentIndex
-                        ? "opacity-0 -translate-x-full scale-95"
-                        : "opacity-0 translate-x-full scale-95"
-                    }`}
+                          ? "opacity-0 -translate-x-full scale-95"
+                          : "opacity-0 translate-x-full scale-95"
+                      }`}
                   >
                     <blockquote className="text-lg md:text-xl text-slate-700 dark:text-slate-300 leading-relaxed text-center italic max-w-3xl px-4 transition-colors duration-300">
                       "{testimonial.content}"
@@ -196,11 +194,10 @@ export const TestimonialsSection = () => {
                       key={testimonial.id}
                       src={testimonial.avatar}
                       alt={testimonial.name}
-                      className={`w-16 h-16 rounded-full object-cover ring-4 ring-white dark:ring-slate-800 shadow-lg absolute top-0 left-1/2 -translate-x-1/2 transition-all duration-700 ${
-                        index === currentIndex
+                      className={`w-16 h-16 rounded-full object-cover ring-4 ring-white dark:ring-slate-800 shadow-lg absolute top-0 left-1/2 -translate-x-1/2 transition-all duration-700 ${index === currentIndex
                           ? "opacity-100 scale-100"
                           : "opacity-0 scale-75"
-                      }`}
+                        }`}
                     />
                   ))}
                   <div className="w-16 h-16"></div> {/* Spacer */}
@@ -210,11 +207,10 @@ export const TestimonialsSection = () => {
                   {testimonials.map((testimonial, index) => (
                     <div
                       key={testimonial.id}
-                      className={`transition-all duration-700 ${
-                        index === currentIndex
+                      className={`transition-all duration-700 ${index === currentIndex
                           ? "opacity-100"
                           : "opacity-0 absolute"
-                      }`}
+                        }`}
                     >
                       <div className="font-bold text-lg text-slate-900 dark:text-slate-100 transition-colors duration-300">
                         {testimonial.name}
@@ -254,11 +250,10 @@ export const TestimonialsSection = () => {
               <button
                 key={index}
                 onClick={() => goToSlide(index)}
-                className={`transition-all duration-300 rounded-full ${
-                  index === currentIndex
+                className={`transition-all duration-300 rounded-full ${index === currentIndex
                     ? "w-8 h-3 bg-teal-600 dark:bg-teal-500"
                     : "w-3 h-3 bg-slate-300 dark:bg-slate-600 hover:bg-slate-400 dark:hover:bg-slate-500"
-                }`}
+                  }`}
                 aria-label={`Go to testimonial ${index + 1}`}
               />
             ))}
@@ -267,9 +262,8 @@ export const TestimonialsSection = () => {
 
         {/* Trust Indicators */}
         <div
-          className={`mt-16 transition-all duration-1000 delay-500 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-          }`}
+          className={`mt-16 transition-all duration-1000 delay-500 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+            }`}
         >
           <div className="bg-slate-50 dark:bg-slate-900 rounded-2xl p-8 border border-slate-200 dark:border-slate-800 shadow-lg dark:shadow-emerald-900/10 transition-all duration-300 hover:shadow-xl dark:hover:shadow-emerald-900/20">
             <div className="grid md:grid-cols-4 gap-8 items-center">

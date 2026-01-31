@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
 import { mockData } from '../data/mock';
 
@@ -17,7 +17,7 @@ export const Footer = () => {
 
   const services = [
     'SEO Audit & Strategy',
-    'On-Page SEO Optimization', 
+    'On-Page SEO Optimization',
     'Off-Page SEO & Link Building',
     'Website Restructuring',
     'Ongoing SEO Management'
@@ -48,7 +48,7 @@ export const Footer = () => {
                   {companyInfo.tagline}
                 </p>
               </div>
-              
+
               <p className="text-slate-400 text-sm leading-relaxed mb-6">
                 We specialize in SEO ranking and website restructuring services for USA-based businesses, helping them rank higher, convert better, and grow faster.
               </p>
@@ -104,7 +104,7 @@ export const Footer = () => {
             {/* Contact & CTA */}
             <div>
               <h4 className="text-lg font-semibold text-white mb-6">Get Started</h4>
-              
+
               {/* Contact Info */}
               <div className="space-y-4 mb-6">
                 <div className="flex items-center space-x-3">
@@ -139,7 +139,7 @@ export const Footer = () => {
             <div className="text-slate-400 text-sm">
               © {currentYear} ElevateRank Digital. All rights reserved.
             </div>
-            
+
             <div className="flex items-center space-x-6 text-sm text-slate-400">
               <a href="#" className="hover:text-teal-400 transition-colors duration-200">
                 Privacy Policy

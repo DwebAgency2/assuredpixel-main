@@ -9,8 +9,8 @@ const mockData = {
   heroContent: {
     headline: "Grow Your Business with Strategy-Led Digital Marketing",
     subheadline:
-      "We help small businesses and startups in the USA attract the right audience, improve conversions, and scale with SEO, web design, and data-driven marketing strategy.",
-    ctaText: "Get Your Free SEO Audit",
+      "We help small businesses and startups in the USA attract the right audience, improve conversions, and scale with branding, web design, SEO, and full-funnel marketing strategies.",
+    ctaText: "Get Your Free Strategy Session",
     ctaSubtext: "✨ No pressure • Clear next steps • Practical recommendations",
   },
 };
@@ -26,9 +26,9 @@ export const HeroSection = () => {
   };
 
   const features = [
-    "SEO, paid ads, and content that drive real leads",
-    "High-converting websites and funnels",
-    "Clear reporting, measurable growth, no guesswork",
+    "Comprehensive strategies that drive real business growth",
+    "High-converting websites and brand identities",
+    "Data-driven insights and measurable results, no guesswork",
   ];
 
   // Animation variants
@@ -257,17 +257,17 @@ export const HeroSection = () => {
               >
                 {[
                   {
-                    label: "Organic Traffic",
+                    label: "Conversion Rate",
                     value: "+187%",
                     color: "text-emerald-600 dark:text-emerald-400",
                   },
                   {
-                    label: "Keyword Rankings",
-                    value: "+45 Page 1",
+                    label: "Brand Visibility",
+                    value: "+150%",
                     color: "text-teal-600 dark:text-teal-400",
                   },
                   {
-                    label: "Lead Generation",
+                    label: "Revenue Growth",
                     value: "+234%",
                     color: "text-emerald-600 dark:text-emerald-400",
                   },

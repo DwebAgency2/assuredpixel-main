@@ -176,7 +176,7 @@ export const mockData = {
   blogPosts: [
     {
       id: 1,
-      title: "10 SEO Mistakes That Are Hurting Your Rankings in 2024",
+      title: "10 Digital Marketing Mistakes That Are Hurting Your Growth in 2024",
       excerpt:
         "Learn the most common SEO mistakes businesses make and how to fix them to improve search visibility and long-term rankings.",
       author: "AssuredPixel Team",
@@ -200,7 +200,7 @@ export const mockData = {
     },
     {
       id: 3,
-      title: "Local SEO Strategies That Help Small Businesses Compete",
+      title: "Building a Strong Brand Identity That Helps Small Businesses Compete",
       excerpt:
         "Proven local SEO strategies that help small businesses improve visibility, attract nearby customers, and grow consistently.",
       author: "AssuredPixel Team",
@@ -217,7 +217,7 @@ export const mockData = {
     name: "AssuredPixel",
     tagline: "Transform Your Online Presence",
     description:
-      "We specialize in SEO, website development, content strategy, paid ads, and cloud integration for USA-based businesses looking for measurable growth.",
+      "We specialize in branding, web design, SEO, content strategy, and full-funnel digital marketing for USA-based businesses looking for measurable growth.",
     founded: "2020",
     clientsServed: "150+",
     averageGrowth: "180%",
@@ -225,7 +225,7 @@ export const mockData = {
 
   // Contact Info
   contactInfo: {
-    email: "hello@prorankrankdigital.com",
+    email: "hello@assuredpixel.com",
     phone: "+1 (555) 123-4567",
     address: "123 Digital Avenue, Austin, TX 78701",
     hours: "Monday – Friday: 9:00 AM – 6:00 PM CST",

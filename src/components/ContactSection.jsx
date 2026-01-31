@@ -11,7 +11,7 @@ import { Mail, Phone, MapPin, Clock, ArrowRight } from "lucide-react";
 // Mock data (replace with your actual import)
 const mockData = {
   contactInfo: {
-    email: "hello@elevaterank.com",
+    email: "hello@assuredpixel.com",
     phone: "+1 (555) 123-4567",
     address: "123 Digital Ave, Suite 100, San Francisco, CA 94105",
     hours: "Mon-Fri: 9AM-6PM PST",
@@ -110,7 +110,7 @@ export const ContactSection = () => {
 
       if (response.ok) {
         alert(
-          "Thank you! We'll contact you within 24 hours to schedule your free SEO audit."
+          "Thank you! We'll contact you within 24 hours to schedule your free strategy session."
         );
 
         setFormData({
@@ -157,8 +157,8 @@ export const ContactSection = () => {
             Ready to Transform Your Business?
           </h2>
           <p className="text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto leading-relaxed transition-colors duration-300">
-            Book your free SEO audit and discover how we can help your business
-            rank higher, attract more customers, and grow faster online.
+            Book your free strategy session and discover how we can help your business
+            scale its brand, attract more customers, and grow faster online.
           </p>
         </div>
 
@@ -177,11 +177,11 @@ export const ContactSection = () => {
             <Card className="bg-white dark:bg-slate-800 shadow-xl dark:shadow-teal-900/10 border-slate-200 dark:border-slate-700 transition-all duration-300 hover:shadow-2xl dark:hover:shadow-teal-900/20 hover:scale-[1.01]">
               <CardHeader>
                 <CardTitle className="text-2xl font-bold text-slate-900 dark:text-slate-50 transition-colors duration-300">
-                  Book Your Free SEO Audit
+                  Book Your Free Strategy Session
                 </CardTitle>
                 <CardDescription className="text-slate-600 dark:text-slate-400 transition-colors duration-300">
-                  Fill out the form below and we'll analyze your website's SEO
-                  performance and provide actionable recommendations at no cost.
+                  Fill out the form below and we'll analyze your digital
+                  presence and provide actionable recommendations at no cost.
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -319,7 +319,7 @@ export const ContactSection = () => {
                       value={formData.message}
                       onChange={handleInputChange}
                       className="w-full px-4 py-3 rounded-lg border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-teal-500 dark:focus:ring-teal-400 focus:border-transparent transition-all duration-300 resize-none"
-                      placeholder="Tell us about your current challenges and what you'd like to achieve with SEO..."
+                      placeholder="Tell us about your current challenges and what you'd like to achieve with digital marketing..."
                     />
                   </div>
 
@@ -332,7 +332,7 @@ export const ContactSection = () => {
                       <span className="animate-pulse">Sending...</span>
                     ) : (
                       <>
-                        <span>Book My Free SEO Audit</span>
+                        <span>Get My Free Strategy Session</span>
                         <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                       </>
                     )}
@@ -340,7 +340,7 @@ export const ContactSection = () => {
 
                   <p className="text-xs text-slate-500 dark:text-slate-500 text-center transition-colors duration-300">
                     By submitting this form, you agree to receive communications
-                    from ElevateRank Digital. We respect your privacy and will
+                    from AssuredPixel Digital. We respect your privacy and will
                     never share your information.
                   </p>
                 </div>
@@ -455,7 +455,7 @@ export const ContactSection = () => {
                         Quick Response
                       </div>
                       <div className="text-sm text-slate-600 dark:text-slate-400 transition-colors duration-300">
-                        We'll contact you within 24 hours to schedule your audit
+                        We'll contact you within 24 hours to schedule your session
                       </div>
                     </div>
                   </div>
@@ -465,10 +465,10 @@ export const ContactSection = () => {
                     </div>
                     <div>
                       <div className="font-semibold text-slate-900 dark:text-slate-100 transition-colors duration-300">
-                        Free SEO Audit
+                        Digital Audit
                       </div>
                       <div className="text-sm text-slate-600 dark:text-slate-400 transition-colors duration-300">
-                        Comprehensive analysis of your website's SEO performance
+                        Comprehensive analysis of your brand's online performance
                       </div>
                     </div>
                   </div>
@@ -481,7 +481,7 @@ export const ContactSection = () => {
                         Strategy Session
                       </div>
                       <div className="text-sm text-slate-600 dark:text-slate-400 transition-colors duration-300">
-                        Custom roadmap to improve your rankings and traffic
+                        Custom roadmap to scale your brand and revenue
                       </div>
                     </div>
                   </div>

@@ -10,7 +10,7 @@ const mockData = {
       role: "CEO",
       company: "TechVision Inc",
       content:
-        "Working with ElevateRank Digital transformed our online presence completely. Within 6 months, we saw a 300% increase in organic traffic and our conversion rates doubled. Their team's expertise in SEO is unmatched!",
+        "Working with AssuredPixel transformed our online presence completely. Within 6 months, we saw a 300% increase in customer inquiries and our conversion rates doubled. Their team's expertise in digital strategy is unmatched!",
       rating: 5,
       avatar:
         "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop",
@@ -21,7 +21,7 @@ const mockData = {
       role: "Marketing Director",
       company: "GreenLeaf Organic",
       content:
-        "The results speak for themselves. Our website now ranks #1 for our target keywords, and we've seen a 250% increase in qualified leads. The ROI has been exceptional, and their team is always responsive and professional.",
+        "The results speak for themselves. Our website is now a lead generation machine for our target market, and we've seen a 250% increase in qualified sales opportunities. The ROI has been exceptional.",
       rating: 4,
       avatar:
         "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop",
@@ -32,7 +32,7 @@ const mockData = {
       role: "Founder",
       company: "Urban Fitness Co",
       content:
-        "I was skeptical about SEO at first, but ElevateRank Digital proved me wrong. They delivered beyond expectations with clear communication, transparent reporting, and most importantly - real, measurable results that impacted our bottom line.",
+        "I was skeptical about digital marketing at first, but AssuredPixel proved me wrong. They delivered beyond expectations with clear communication, transparent reporting, and most importantly - real results.",
       rating: 5,
       avatar:
         "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop",
@@ -43,7 +43,7 @@ const mockData = {
       role: "Owner",
       company: "Park's Home Services",
       content:
-        "Our local SEO was practically non-existent before working with this team. Now we dominate local search results and get calls daily from new customers. The investment paid for itself within the first 3 months!",
+        "Our local digital presence was practically non-existent before working with this team. Now we dominate local search results and get calls daily from new customers. Our new brand identity looks amazing!",
       rating: 5,
       avatar:
         "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop",
@@ -54,7 +54,7 @@ const mockData = {
       role: "E-commerce Manager",
       company: "Bella Fashion",
       content:
-        "ElevateRank Digital helped us optimize our entire e-commerce site. Page load speeds improved dramatically, our product pages rank higher, and most importantly - sales increased by 180%. Couldn't be happier!",
+        "AssuredPixel helped us optimize our entire e-commerce brand and site. User experience improved dramatically, our brand feels premium, and most importantly - sales increased by 180%.",
       rating: 3,
       avatar:
         "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=200&h=200&fit=crop",
@@ -137,7 +137,7 @@ export const TestimonialsSection = () => {
           </h2>
           <p className="text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto leading-relaxed transition-colors duration-300">
             Don't just take our word for it. Hear from business owners who have
-            experienced remarkable growth with ElevateRank Digital.
+            experienced remarkable growth with AssuredPixel.
           </p>
         </div>
 

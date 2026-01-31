@@ -16,11 +16,12 @@ export const Footer = () => {
   ];
 
   const services = [
-    'SEO Audit & Strategy',
-    'On-Page SEO Optimization',
-    'Off-Page SEO & Link Building',
-    'Website Restructuring',
-    'Ongoing SEO Management'
+    'Business Branding',
+    'Website Construction',
+    'Search Engine Optimization',
+    'Content Writing',
+    'Social Media Management',
+    'Cloud Integration'
   ];
 
   const scrollToSection = (href) => {
@@ -42,7 +43,7 @@ export const Footer = () => {
             <div className="lg:col-span-1">
               <div className="mb-6">
                 <h3 className="text-2xl font-bold text-white mb-2">
-                  ElevateRank <span className="text-teal-400">Digital</span>
+                  AssuredPixel <span className="text-teal-400">Digital</span>
                 </h3>
                 <p className="text-slate-300 leading-relaxed">
                   {companyInfo.tagline}
@@ -50,7 +51,7 @@ export const Footer = () => {
               </div>
 
               <p className="text-slate-400 text-sm leading-relaxed mb-6">
-                We specialize in SEO ranking and website restructuring services for USA-based businesses, helping them rank higher, convert better, and grow faster.
+                We specialize in comprehensive digital marketing solutions for USA-based businesses, helping them build brands, convert leads, and grow faster.
               </p>
 
               {/* Social Proof */}
@@ -126,7 +127,7 @@ export const Footer = () => {
                 onClick={() => scrollToSection('#contact')}
                 className="w-full bg-teal-600 hover:bg-teal-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg group flex items-center justify-center space-x-2"
               >
-                <span>Book Free Audit</span>
+                <span>Get Strategy Session</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
               </button>
             </div>
@@ -137,7 +138,7 @@ export const Footer = () => {
         <div className="border-t border-slate-700 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-slate-400 text-sm">
-              © {currentYear} ElevateRank Digital. All rights reserved.
+              © {currentYear} AssuredPixel Digital. All rights reserved.
             </div>
 
             <div className="flex items-center space-x-6 text-sm text-slate-400">

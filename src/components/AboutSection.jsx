@@ -44,8 +44,8 @@ export const AboutSection = () => {
   ];
 
   const achievements = [
-    "150+ successful SEO campaigns",
-    "180% average traffic growth",
+    "150+ successful digital campaigns",
+    "180% average ROI growth",
     "98% client retention rate",
     "4+ years of proven results",
   ];
@@ -153,9 +153,9 @@ export const AboutSection = () => {
               >
                 Founded in {companyInfo.founded}, we've helped over{" "}
                 {companyInfo.clientsServed} businesses transform their online
-                presence through strategic SEO, website restructuring, and
-                content optimization. On average, our clients experience{" "}
-                {companyInfo.averageGrowth} growth in organic traffic and
+                presence through integrated branding, custom web design, and
+                data-driven digital marketing. On average, our clients experience{" "}
+                {companyInfo.averageGrowth} growth in online visibility and
                 qualified lead generation.
               </motion.p>
             </div>
@@ -302,8 +302,8 @@ export const AboutSection = () => {
                 viewport={{ once: true }}
                 transition={{ delay: 0.6, duration: 0.5 }}
               >
-                Meet our dedicated team of SEO experts and digital strategists
-                committed to your business growth.
+                Meet our dedicated team of digital growth experts and strategists
+                committed to your business success.
               </motion.p>
             </motion.div>
           </motion.div>

@@ -21,10 +21,10 @@ const mockData = {
   blogPosts: [
     {
       id: 1,
-      title: "10 Essential SEO Strategies for 2024",
+      title: "Digital Marketing Trends for 2024",
       excerpt:
-        "Discover the latest SEO techniques that will help your business dominate search engine rankings and attract more organic traffic.",
-      category: "SEO Strategy",
+        "Explore the latest multi-channel marketing trends that will help your business reach new audiences and drive sustainable growth.",
+      category: "Marketing Strategy",
       author: "John Smith",
       date: "2024-01-15",
       readTime: "8 min read",
@@ -32,26 +32,26 @@ const mockData = {
         "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=800&h=600&fit=crop",
       fullContent: `
         <h2>Introduction</h2>
-        <p>In the ever-evolving world of digital marketing, staying ahead of SEO trends is crucial for business success. This comprehensive guide will walk you through the top 10 SEO strategies that are proven to work in 2024.</p>
+        <p>In the ever-evolving world of digital marketing, staying ahead of cross-platform trends is crucial for business success. This guide covers the top strategies for 2024 across branding, social media, and search.</p>
         
-        <h3>1. Focus on User Experience (UX)</h3>
-        <p>Google's algorithms increasingly prioritize websites that offer excellent user experiences. This means fast loading times, mobile responsiveness, and intuitive navigation are more important than ever.</p>
+        <h3>1. Multi-Channel Presence</h3>
+        <p>Brands that maintain consistent messaging across multiple platforms see significantly higher engagement. From Instagram to Google Search, your brand should feel unified.</p>
         
-        <h3>2. Create High-Quality, E-E-A-T Content</h3>
-        <p>Experience, Expertise, Authoritativeness, and Trustworthiness (E-E-A-T) are critical factors. Create content that demonstrates your knowledge and builds trust with your audience.</p>
+        <h3>2. Personalized Content Experiences</h3>
+        <p>Generic marketing is out. Use data-driven insights to tailor your content to the specific needs and pain points of your target audience.</p>
         
-        <h3>3. Optimize for Voice Search</h3>
-        <p>With the rise of smart speakers and voice assistants, optimizing for natural language queries is essential. Focus on long-tail keywords and conversational phrases.</p>
+        <h3>3. AI-Powered Marketing Automation</h3>
+        <p>Leverage AI tools to streamline your workflows, from customer service chatbots to automated email sequences that nurture leads.</p>
         
-        <h3>4. Leverage Video Content</h3>
-        <p>Video content continues to dominate. Create engaging videos and optimize them with proper titles, descriptions, and transcripts for better search visibility.</p>
+        <h3>4. Video-First Social Strategy</h3>
+        <p>Short-form video continues to dominate. Whether it's Reels, TikToks, or YouTube Shorts, video is the most engaging way to tell your brand story.</p>
         
-        <h3>5. Build Quality Backlinks</h3>
-        <p>Quality over quantity remains the golden rule for backlinks. Focus on earning links from authoritative, relevant websites in your industry.</p>
+        <h3>5. Authentic Brand Storytelling</h3>
+        <p>Customers connect with brands that share their values. Focus on transparency and building genuine relationships through your digital presence.</p>
         
-        <p><strong>Ready to transform your SEO strategy?</strong> <a href="#contact" class="text-teal-600 dark:text-teal-400 hover:underline">Contact us today</a> for a free consultation and see how we can help your business grow.</p>
+        <p><strong>Ready to transform your digital strategy?</strong> <a href="#contact" class="text-teal-600 dark:text-teal-400 hover:underline">Contact us today</a> for a free consultation and see how we can help your business grow.</p>
         
-        <p>Don't forget to check out our <a href="#services" class="text-teal-600 dark:text-teal-400 hover:underline">SEO services</a> and <a href="#case-studies" class="text-teal-600 dark:text-teal-400 hover:underline">success stories</a> to learn more about what we can do for you.</p>
+        <p>Don't forget to check out our <a href="#services" class="text-teal-600 dark:text-teal-400 hover:underline">marketing services</a> and <a href="#case-studies" class="text-teal-600 dark:text-teal-400 hover:underline">approach</a> to learn more about what we can do for you.</p>
       `,
     },
     {
@@ -83,29 +83,29 @@ const mockData = {
     },
     {
       id: 3,
-      title: "Local SEO: Complete Guide for Small Businesses",
+      title: "Building a Brand That Scales in 2024",
       excerpt:
-        "Master local SEO to dominate your geographic market and attract more local customers to your business.",
-      category: "Local SEO",
+        "Learn the key elements of a strong brand identity and how to maintain consistency across all digital touchpoints.",
+      category: "Branding",
       author: "Michael Chen",
       date: "2024-01-05",
       readTime: "10 min read",
       image:
         "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&h=600&fit=crop",
       fullContent: `
-        <h2>The Power of Local SEO</h2>
-        <p>For small businesses, local SEO is the key to competing with larger competitors. 46% of all Google searches are seeking local information.</p>
+        <h2>The Power of Strong Branding</h2>
+        <p>In a cluttered digital landscape, your brand is what sets you apart. It's more than just a logo; it's the promise you make to your customers.</p>
         
-        <h3>Optimize Your Google Business Profile</h3>
-        <p>Your Google Business Profile is your most important local SEO asset. Keep it complete, accurate, and regularly updated with posts and photos.</p>
+        <h3>Define Your Brand Story</h3>
+        <p>Why do you do what you do? Defining your purpose and mission helps create an emotional connection with your audience.</p>
         
-        <h3>Build Local Citations</h3>
-        <p>Ensure your NAP (Name, Address, Phone) information is consistent across all online directories and platforms.</p>
+        <h3>Visual Consistency</h3>
+        <p>Ensure your colors, typography, and imagery are consistent across your website, social media, and marketing materials.</p>
         
-        <h3>Collect and Manage Reviews</h3>
-        <p>Positive reviews are crucial for local rankings. Actively encourage satisfied customers to leave reviews and respond to all feedback professionally.</p>
+        <h3>Customer Experience as Brand</h3>
+        <p>Every interaction a customer has with your business is part of your brand. Focus on delivering excellence at every stage of the funnel.</p>
         
-        <p>Want to dominate your local market? Check out our <a href="#case-studies" class="text-teal-600 dark:text-teal-400 hover:underline">local SEO success stories</a> and <a href="#contact" class="text-teal-600 dark:text-teal-400 hover:underline">schedule a consultation</a> to get started.</p>
+        <p>Want to build a brand that resonates? Check out our <a href="#case-studies" class="text-teal-600 dark:text-teal-400 hover:underline">branding approach</a> and <a href="#contact" class="text-teal-600 dark:text-teal-400 hover:underline">schedule a consultation</a> to get started.</p>
       `,
     },
   ],
@@ -212,11 +212,11 @@ export const BlogSection = () => {
             Latest Insights
           </div>
           <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-slate-50 mb-6 transition-colors duration-300">
-            SEO Tips & Industry Insights
+            Digital Growth & Industry Insights
           </h2>
           <p className="text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto leading-relaxed transition-colors duration-300">
-            Stay ahead of the competition with our latest SEO strategies,
-            industry trends, and actionable tips to boost your online presence.
+            Stay ahead of the competition with our latest marketing strategies,
+            industry trends, and actionable tips to scale your online presence.
           </p>
         </div>
 
@@ -227,11 +227,10 @@ export const BlogSection = () => {
               key={post.id}
               data-animate
               data-index={`post-${index}`}
-              className={`opacity-0 transition-all duration-700 ${
-                visibleItems.has(`post-${index}`)
+              className={`opacity-0 transition-all duration-700 ${visibleItems.has(`post-${index}`)
                   ? "opacity-100 translate-y-0"
                   : "translate-y-12"
-              }`}
+                }`}
               style={{
                 transitionDelay: `${index * 150}ms`,
               }}
@@ -325,10 +324,10 @@ export const BlogSection = () => {
         >
           <div className="bg-gradient-to-r from-teal-50 to-emerald-50 dark:from-slate-900 dark:to-slate-800 rounded-2xl p-8 border border-teal-200 dark:border-slate-700 text-center shadow-lg dark:shadow-purple-900/10 transition-all duration-300 hover:shadow-xl dark:hover:shadow-purple-900/20">
             <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-50 mb-4 transition-colors duration-300">
-              Stay Updated with SEO Trends
+              Stay Updated with Digital Trends
             </h3>
             <p className="text-slate-600 dark:text-slate-400 mb-6 max-w-2xl mx-auto transition-colors duration-300">
-              Get the latest SEO insights, industry news, and actionable tips
+              Get the latest marketing insights, industry news, and actionable tips
               delivered straight to your inbox every week.
             </p>
             <div className="max-w-md mx-auto flex flex-wrap gap-3">
@@ -351,16 +350,14 @@ export const BlogSection = () => {
       {/* Modal */}
       {isModalOpen && (
         <div
-          className={`fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 dark:bg-black/80 backdrop-blur-sm transition-opacity duration-300 ${
-            isModalOpen ? "opacity-100" : "opacity-0"
-          }`}
+          className={`fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 dark:bg-black/80 backdrop-blur-sm transition-opacity duration-300 ${isModalOpen ? "opacity-100" : "opacity-0"
+            }`}
           onClick={closeModal}
         >
           <div
             ref={modalRef}
-            className={`relative w-full max-w-4xl max-h-[90vh] bg-white dark:bg-slate-900 rounded-2xl shadow-2xl overflow-hidden transition-all duration-300 ${
-              isModalOpen ? "scale-100 opacity-100" : "scale-95 opacity-0"
-            }`}
+            className={`relative w-full max-w-4xl max-h-[90vh] bg-white dark:bg-slate-900 rounded-2xl shadow-2xl overflow-hidden transition-all duration-300 ${isModalOpen ? "scale-100 opacity-100" : "scale-95 opacity-0"
+              }`}
             onClick={(e) => e.stopPropagation()}
           >
             {/* Modal Header */}
@@ -426,11 +423,11 @@ export const BlogSection = () => {
               <div className="mt-12 pt-8 border-t border-slate-200 dark:border-slate-700">
                 <div className="bg-gradient-to-r from-teal-50 to-emerald-50 dark:from-slate-800 dark:to-slate-800 rounded-xl p-6 text-center border border-teal-200 dark:border-slate-700">
                   <h3 className="text-xl font-bold text-slate-900 dark:text-slate-50 mb-3">
-                    Ready to Transform Your SEO?
+                    Ready to Grow Your Brand?
                   </h3>
                   <p className="text-slate-600 dark:text-slate-400 mb-4">
                     Let's discuss how we can help your business grow with proven
-                    SEO strategies.
+                    digital marketing strategies.
                   </p>
                   <button
                     onClick={() => {

@@ -99,7 +99,7 @@ export const HeroSection = () => {
       <div className="absolute inset-0 bg-grid-slate-100 dark:bg-grid-slate-800 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] dark:[mask-image:linear-gradient(0deg,rgba(0,0,0,0.9),rgba(0,0,0,0.4))] -z-10"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-center text-center lg:text-left">
           {/* Content - Left Side */}
           <motion.div
             className="space-y-8"
@@ -110,7 +110,7 @@ export const HeroSection = () => {
             <div className="space-y-6">
               <motion.div
                 variants={itemVariants}
-                className="inline-flex items-center px-4 py-2 bg-teal-100 dark:bg-teal-900/50 text-teal-800 dark:text-teal-300 rounded-full text-sm font-medium"
+                className="inline-flex items-center px-4 py-2 bg-teal-100 dark:bg-teal-900/50 text-teal-800 dark:text-teal-300 rounded-full text-sm font-medium mx-auto lg:mx-0"
               >
                 🚀 Growth Partner for Modern Businesses
               </motion.div>
@@ -129,7 +129,7 @@ export const HeroSection = () => {
             </div>
 
             {/* Features List */}
-            <motion.div className="space-y-3" variants={containerVariants}>
+            <motion.div className="space-y-3 inline-block lg:block text-left" variants={containerVariants}>
               {features.map((feature, index) => (
                 <motion.div
                   key={index}
@@ -147,7 +147,7 @@ export const HeroSection = () => {
             {/* CTA Buttons */}
             <motion.div
               variants={itemVariants}
-              className="flex flex-col sm:flex-row gap-4"
+              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
             >
               <Button
                 onClick={scrollToContact}

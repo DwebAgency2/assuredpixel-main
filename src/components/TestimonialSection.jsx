@@ -143,13 +143,13 @@ export const TestimonialsSection = () => {
 
         {/* Carousel Container */}
         <div
-          className={`relative max-w-5xl mx-auto mb-16 transition-all duration-1000 delay-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          className={`relative max-w-3xl mx-auto mb-16 transition-all duration-1000 delay-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
           {/* Main Carousel */}
-          <div className="relative bg-gradient-to-br from-teal-50 to-emerald-50 dark:from-slate-900 dark:to-slate-800 rounded-3xl p-8 md:p-12 shadow-2xl dark:shadow-emerald-900/20 border border-slate-200 dark:border-slate-700 overflow-hidden transition-colors duration-300">
+          <div className="relative bg-gradient-to-br from-teal-50 to-emerald-50 dark:from-slate-900 dark:to-slate-800 rounded-3xl p-6 md:p-8 shadow-2xl dark:shadow-emerald-900/20 border border-slate-200 dark:border-slate-700 overflow-hidden transition-colors duration-300">
             {/* Decorative Quote */}
             <div className="absolute top-8 left-8 opacity-10 dark:opacity-5">
               <Quote className="w-24 h-24 text-teal-600 dark:text-teal-400" />
@@ -173,10 +173,10 @@ export const TestimonialsSection = () => {
                   <div
                     key={testimonial.id}
                     className={`absolute transition-all duration-700 ease-in-out ${index === currentIndex
-                        ? "opacity-100 translate-x-0 scale-100"
-                        : index < currentIndex
-                          ? "opacity-0 -translate-x-full scale-95"
-                          : "opacity-0 translate-x-full scale-95"
+                      ? "opacity-100 translate-x-0 scale-100"
+                      : index < currentIndex
+                        ? "opacity-0 -translate-x-full scale-95"
+                        : "opacity-0 translate-x-full scale-95"
                       }`}
                   >
                     <blockquote className="text-lg md:text-xl text-slate-700 dark:text-slate-300 leading-relaxed text-center italic max-w-3xl px-4 transition-colors duration-300">
@@ -195,8 +195,8 @@ export const TestimonialsSection = () => {
                       src={testimonial.avatar}
                       alt={testimonial.name}
                       className={`w-16 h-16 rounded-full object-cover ring-4 ring-white dark:ring-slate-800 shadow-lg absolute top-0 left-1/2 -translate-x-1/2 transition-all duration-700 ${index === currentIndex
-                          ? "opacity-100 scale-100"
-                          : "opacity-0 scale-75"
+                        ? "opacity-100 scale-100"
+                        : "opacity-0 scale-75"
                         }`}
                     />
                   ))}
@@ -208,8 +208,8 @@ export const TestimonialsSection = () => {
                     <div
                       key={testimonial.id}
                       className={`transition-all duration-700 ${index === currentIndex
-                          ? "opacity-100"
-                          : "opacity-0 absolute"
+                        ? "opacity-100"
+                        : "opacity-0 absolute"
                         }`}
                     >
                       <div className="font-bold text-lg text-slate-900 dark:text-slate-100 transition-colors duration-300">
@@ -251,8 +251,8 @@ export const TestimonialsSection = () => {
                 key={index}
                 onClick={() => goToSlide(index)}
                 className={`transition-all duration-300 rounded-full ${index === currentIndex
-                    ? "w-8 h-3 bg-teal-600 dark:bg-teal-500"
-                    : "w-3 h-3 bg-slate-300 dark:bg-slate-600 hover:bg-slate-400 dark:hover:bg-slate-500"
+                  ? "w-8 h-3 bg-teal-600 dark:bg-teal-500"
+                  : "w-3 h-3 bg-slate-300 dark:bg-slate-600 hover:bg-slate-400 dark:hover:bg-slate-500"
                   }`}
                 aria-label={`Go to testimonial ${index + 1}`}
               />

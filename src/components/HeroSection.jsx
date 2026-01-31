@@ -115,19 +115,17 @@ export const HeroSection = () => {
                 🚀 Growth Partner for Modern Businesses
               </motion.div>
 
-              <motion.h1
-                variants={itemVariants}
+              <h1
                 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 dark:text-white leading-tight"
               >
                 {heroContent.headline}
-              </motion.h1>
+              </h1>
 
-              <motion.p
-                variants={itemVariants}
+              <p
                 className="text-xl text-slate-600 dark:text-slate-300 leading-relaxed max-w-2xl"
               >
                 {heroContent.subheadline}
-              </motion.p>
+              </p>
             </div>
 
             {/* Features List */}

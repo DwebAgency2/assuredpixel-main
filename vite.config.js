@@ -26,6 +26,16 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     sourcemap: true,
+    target: 'esnext', // 1. Fix: Modern target prevents unnecessary polyfills
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
+          'framer-motion': ['framer-motion'],
+          'ui-vendor': ['@radix-ui/react-accordion', '@radix-ui/react-dialog', 'lucide-react', 'clsx', 'tailwind-merge']
+        }
+      }
+    }
   },
   define: {
     // For compatibility with existing environment variable usage

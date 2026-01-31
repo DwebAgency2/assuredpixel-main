@@ -27,86 +27,10 @@ const iconMap = {
   Cloud,
 };
 
-// Mock data for demo
-const mockData = {
-  services: [
-    {
-      id: 1,
-      title: "Business Branding & Strategy",
-      description:
-        "Your brand is more than a logo. It’s how people recognize, trust, and remember your business. We help startups and small businesses define a clear brand voice, visual identity, and positioning that reflects your value and connects with the right audience.",
-      icon: "Brush",
-      features: [
-        "Logo & visual identity design",
-        "Brand voice & messaging strategy",
-        "Brand identity for startups",
-      ],
-    },
-    {
-      id: 2,
-      title: "Responsive Web Design Services",
-      description:
-        "Your website is your 24/7 salesperson. We design and develop conversion-focused, responsive websites that look great on any device. From fast-loading WordPress sites to custom builds, we ensure your site turns visitors into leads.",
-      icon: "Globe",
-      features: [
-        "Custom responsive web design",
-        "Fast-loading performance",
-        "Conversion-focused layouts",
-      ],
-    },
-    {
-      id: 3,
-      title: "Technical SEO & Audit Services",
-      description:
-        "Stop guessing why you aren't ranking. Our comprehensive SEO services include technical audits, keyword optimization, and on-page strategy to help your small business rank higher on Google and attract organic traffic.",
-      icon: "Search",
-      features: [
-        "Technical SEO audits",
-        "On-page keyword optimization",
-        "Local SEO for small business",
-      ],
-    },
-    {
-      id: 4,
-      title: "SEO Content Writing & Strategy",
-      description:
-        "Content that ranks and converts. We create clear, engaging content that explains your value and satisfies user intent. From website copy to SEO-optimized blog posts, we help you build authority in your niche.",
-      icon: "FileText",
-      features: [
-        "Website copywriting",
-        "SEO-friendly blog content",
-        "Content strategy & planning",
-      ],
-    },
-    {
-      id: 5,
-      title: "Social Media Management",
-      description:
-        "Social media is about building real relationships, not just posting content. We manage your social presence by creating and sharing content that drives engagement, strengthens brand awareness, and supports your broader marketing goals.",
-      icon: "MessageCircle",
-      features: [
-        "Content creation & scheduling",
-        "Audience engagement & growth",
-        "Performance tracking & reporting",
-      ],
-    },
-    {
-      id: 6,
-      title: "Cloud Integration",
-      description:
-        "Modern businesses rely on connected, flexible systems. Our cloud integration services help streamline workflows, improve collaboration, and ensure your tools work seamlessly together, creating a scalable foundation for growth.",
-      icon: "Cloud",
-      features: [
-        "App & tool integration",
-        "Secure data migration",
-        "Scalable cloud infrastructure",
-      ],
-    },
-  ],
-};
+import { Link } from "react-router-dom";
+import { services } from "../data/services";
 
 export const ServicesSection = () => {
-  const { services } = mockData;
 
   // Animation variants
   const containerVariants = {
@@ -204,7 +128,7 @@ export const ServicesSection = () => {
           variants={containerVariants}
         >
           {services.map((service, index) => {
-            const IconComponent = iconMap[service.icon];
+            const IconComponent = service.icon;
 
             return (
               <motion.div
@@ -215,91 +139,93 @@ export const ServicesSection = () => {
                   transition: { duration: 0.3 },
                 }}
               >
-                <Card className="relative group h-full hover:shadow-2xl transition-all duration-300 border-slate-200 dark:border-slate-700 hover:border-teal-200 dark:hover:border-teal-600 bg-white dark:bg-slate-900">
-                  <CardHeader className="pb-4">
-                    <div className="flex items-center space-x-4 mb-4">
-                      <motion.div
-                        className="w-12 h-12 bg-teal-100 dark:bg-teal-900/50 rounded-xl flex items-center justify-center group-hover:bg-teal-600 dark:group-hover:bg-teal-500 transition-colors duration-300"
-                        whileHover={{
-                          rotate: [0, -10, 10, -10, 0],
-                          transition: { duration: 0.5 },
-                        }}
-                      >
-                        <IconComponent className="w-6 h-6 text-teal-600 dark:text-teal-400 group-hover:text-white transition-colors duration-300" />
-                      </motion.div>
-                      <motion.div
-                        className="w-8 h-1 bg-teal-600 dark:bg-teal-500 rounded-full opacity-20 group-hover:opacity-100 transition-opacity duration-300"
-                        initial={{ width: 0 }}
-                        whileInView={{ width: 32 }}
-                        transition={{ duration: 0.5, delay: index * 0.1 }}
-                        viewport={{ once: true }}
-                      ></motion.div>
-                    </div>
-
-                    <CardTitle className="text-xl font-bold text-slate-900 dark:text-white group-hover:text-teal-900 dark:group-hover:text-teal-300 transition-colors duration-300">
-                      {service.title}
-                    </CardTitle>
-
-                    <CardDescription className="text-slate-600 dark:text-slate-400 leading-relaxed">
-                      {service.description}
-                    </CardDescription>
-                  </CardHeader>
-
-                  <CardContent>
-                    <motion.ul
-                      className="space-y-3"
-                      initial="hidden"
-                      whileInView="visible"
-                      viewport={{ once: true }}
-                      variants={{
-                        visible: {
-                          transition: {
-                            staggerChildren: 0.08,
-                            delayChildren: 0.2,
-                          },
-                        },
-                      }}
-                    >
-                      {service.features.map((feature, featureIndex) => (
-                        <motion.li
-                          key={featureIndex}
-                          className="flex items-center space-x-3"
-                          variants={{
-                            hidden: { opacity: 0, x: -20 },
-                            visible: {
-                              opacity: 1,
-                              x: 0,
-                              transition: {
-                                duration: 0.4,
-                              },
-                            },
-                          }}
+                <Link to={`/services/${service.slug}`} className="block h-full">
+                  <Card className="relative group h-full hover:shadow-2xl transition-all duration-300 border-slate-200 dark:border-slate-700 hover:border-teal-200 dark:hover:border-teal-600 bg-white dark:bg-slate-900">
+                    <CardHeader className="pb-4">
+                      <div className="flex items-center space-x-4 mb-4">
+                        <motion.div
+                          className="w-12 h-12 bg-teal-100 dark:bg-teal-900/50 rounded-xl flex items-center justify-center group-hover:bg-teal-600 dark:group-hover:bg-teal-500 transition-colors duration-300"
                           whileHover={{
-                            x: 5,
-                            transition: { duration: 0.2 },
+                            rotate: [0, -10, 10, -10, 0],
+                            transition: { duration: 0.5 },
                           }}
                         >
-                          <CheckCircle className="w-4 h-4 text-teal-600 dark:text-teal-400 flex-shrink-0" />
-                          <span className="text-sm text-slate-700 dark:text-slate-300 font-medium">
-                            {feature}
-                          </span>
-                        </motion.li>
-                      ))}
-                    </motion.ul>
-                  </CardContent>
+                          <IconComponent className="w-6 h-6 text-teal-600 dark:text-teal-400 group-hover:text-white transition-colors duration-300" />
+                        </motion.div>
+                        <motion.div
+                          className="w-8 h-1 bg-teal-600 dark:bg-teal-500 rounded-full opacity-20 group-hover:opacity-100 transition-opacity duration-300"
+                          initial={{ width: 0 }}
+                          whileInView={{ width: 32 }}
+                          transition={{ duration: 0.5, delay: index * 0.1 }}
+                          viewport={{ once: true }}
+                        ></motion.div>
+                      </div>
 
-                  {/* Hover Effect Background */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-teal-50 to-emerald-50 dark:from-teal-900/20 dark:to-emerald-900/20 rounded-lg opacity-0 group-hover:opacity-10 dark:group-hover:opacity-30 transition-opacity duration-300 -z-10"></div>
+                      <CardTitle className="text-xl font-bold text-slate-900 dark:text-white group-hover:text-teal-900 dark:group-hover:text-teal-300 transition-colors duration-300">
+                        {service.title}
+                      </CardTitle>
 
-                  {/* Corner Accent */}
-                  <motion.div
-                    className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-teal-400/10 to-transparent dark:from-teal-600/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                    initial={{ scale: 0, rotate: 45 }}
-                    whileInView={{ scale: 1, rotate: 0 }}
-                    transition={{ duration: 0.5, delay: index * 0.1 }}
-                    viewport={{ once: true }}
-                  ></motion.div>
-                </Card>
+                      <CardDescription className="text-slate-600 dark:text-slate-400 leading-relaxed">
+                        {service.description}
+                      </CardDescription>
+                    </CardHeader>
+
+                    <CardContent>
+                      <motion.ul
+                        className="space-y-3"
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        variants={{
+                          visible: {
+                            transition: {
+                              staggerChildren: 0.08,
+                              delayChildren: 0.2,
+                            },
+                          },
+                        }}
+                      >
+                        {service.features.map((feature, featureIndex) => (
+                          <motion.li
+                            key={featureIndex}
+                            className="flex items-center space-x-3"
+                            variants={{
+                              hidden: { opacity: 0, x: -20 },
+                              visible: {
+                                opacity: 1,
+                                x: 0,
+                                transition: {
+                                  duration: 0.4,
+                                },
+                              },
+                            }}
+                            whileHover={{
+                              x: 5,
+                              transition: { duration: 0.2 },
+                            }}
+                          >
+                            <CheckCircle className="w-4 h-4 text-teal-600 dark:text-teal-400 flex-shrink-0" />
+                            <span className="text-sm text-slate-700 dark:text-slate-300 font-medium">
+                              {feature}
+                            </span>
+                          </motion.li>
+                        ))}
+                      </motion.ul>
+                    </CardContent>
+
+                    {/* Hover Effect Background */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-teal-50 to-emerald-50 dark:from-teal-900/20 dark:to-emerald-900/20 rounded-lg opacity-0 group-hover:opacity-10 dark:group-hover:opacity-30 transition-opacity duration-300 -z-10"></div>
+
+                    {/* Corner Accent */}
+                    <motion.div
+                      className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-teal-400/10 to-transparent dark:from-teal-600/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                      initial={{ scale: 0, rotate: 45 }}
+                      whileInView={{ scale: 1, rotate: 0 }}
+                      transition={{ duration: 0.5, delay: index * 0.1 }}
+                      viewport={{ once: true }}
+                    ></motion.div>
+                  </Card>
+                </Link>
               </motion.div>
             );
           })}

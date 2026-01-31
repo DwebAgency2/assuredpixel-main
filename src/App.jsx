@@ -1,10 +1,12 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
+import { HelmetProvider } from "react-helmet-async";
 import { Header } from "./components/Header";
 import { HeroSection } from "./components/HeroSection";
 import { Footer } from "./components/Footer";
 import { Toaster } from "./components/ui/sonner";
+import { ServiceDetail } from "./components/ServiceDetail";
 
 // Lazy load below-the-fold components
 const AboutSection = lazy(() => import("./components/AboutSection").then(module => ({ default: module.AboutSection })));
@@ -39,15 +41,23 @@ const Home = () => {
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}>
-            <Route index element={<Home />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </div>
+    <HelmetProvider>
+      <div className="App">
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/services/:slug" element={
+              <>
+                <Header />
+                <ServiceDetail />
+                <Footer />
+                <Toaster />
+              </>
+            } />
+          </Routes>
+        </BrowserRouter>
+      </div>
+    </HelmetProvider>
   );
 }
 

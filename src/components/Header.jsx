@@ -1,10 +1,25 @@
 import React, { useState, useEffect } from "react";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Button } from "./ui/button";
 import { Menu, X, Moon, Sun } from "lucide-react";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  // Scroll to hash on load/location change
+  useEffect(() => {
+    if (location.hash && location.pathname === "/") {
+      const element = document.querySelector(location.hash);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      }
+    }
+  }, [location]);
 
   // Check for saved theme preference or default to light mode
   useEffect(() => {
@@ -32,19 +47,28 @@ export const Header = () => {
   };
 
   const navigation = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Services", href: "#services" },
-    { name: "Case Studies", href: "#case-studies" },
-    { name: "Testimonials", href: "#testimonials" },
-    { name: "Blog", href: "#blog" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "/", isExternal: true },
+    { name: "About", href: "/#about", isExternal: true },
+    { name: "Services", href: "/#services", isExternal: true },
+    { name: "Case Studies", href: "/#case-studies", isExternal: true },
+    { name: "Testimonials", href: "/#testimonials", isExternal: true },
+    { name: "Blog", href: "/blog", isExternal: true },
+    { name: "Contact", href: "/#contact", isExternal: true },
   ];
 
-  const scrollToSection = (href) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+  const handleNavClick = (href) => {
+    if (href.startsWith("/#") || href === "/") {
+      if (window.location.pathname === "/") {
+        const id = href.replace("/", "");
+        const element = document.querySelector(id || "#home");
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      } else {
+        navigate(href);
+      }
+    } else {
+      navigate(href);
     }
     setIsMenuOpen(false);
   };
@@ -69,7 +93,7 @@ export const Header = () => {
               {navigation.map((item) => (
                 <button
                   key={item.name}
-                  onClick={() => scrollToSection(item.href)}
+                  onClick={() => handleNavClick(item.href)}
                   className="text-slate-600 dark:text-slate-300 hover:text-teal-600 dark:hover:text-teal-400 px-3 py-2 text-sm font-medium transition-colors duration-200"
                 >
                   {item.name}
@@ -91,7 +115,7 @@ export const Header = () => {
 
             {/* CTA Button */}
             <Button
-              onClick={() => scrollToSection("#contact")}
+              onClick={() => handleNavClick("/#contact")}
               className="bg-teal-600 hover:bg-teal-700 dark:bg-teal-500 dark:hover:bg-teal-600 text-white px-6 py-2 rounded-lg transition-all duration-300 hover:shadow-lg hover:scale-105"
             >
               Book Free Audit
@@ -126,7 +150,7 @@ export const Header = () => {
               {navigation.map((item) => (
                 <button
                   key={item.name}
-                  onClick={() => scrollToSection(item.href)}
+                  onClick={() => handleNavClick(item.href)}
                   className="text-slate-600 dark:text-slate-300 hover:text-teal-600 dark:hover:text-teal-400 block px-3 py-2 text-base font-medium w-full text-left transition-colors duration-200"
                 >
                   {item.name}
@@ -134,7 +158,7 @@ export const Header = () => {
               ))}
               <div className="pt-4">
                 <Button
-                  onClick={() => scrollToSection("#contact")}
+                  onClick={() => handleNavClick("/#contact")}
                   className="bg-teal-600 hover:bg-teal-700 dark:bg-teal-500 dark:hover:bg-teal-600 text-white px-6 py-2 rounded-lg w-full transition-all duration-300"
                 >
                   Book Free Audit

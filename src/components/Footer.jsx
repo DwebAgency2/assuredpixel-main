@@ -1,18 +1,20 @@
 
 import { Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
+import { Link, useNavigate } from 'react-router-dom';
 import { mockData } from '../data/mock';
 
 export const Footer = () => {
   const { contactInfo, companyInfo } = mockData;
+  const navigate = useNavigate();
 
   const quickLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Services', href: '#services' },
-    { name: 'Case Studies', href: '#case-studies' },
-    { name: 'Testimonials', href: '#testimonials' },
-    { name: 'Blog', href: '#blog' },
-    { name: 'Contact', href: '#contact' }
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '/#about' },
+    { name: 'Services', href: '/#services' },
+    { name: 'Case Studies', href: '/#case-studies' },
+    { name: 'Testimonials', href: '/#testimonials' },
+    { name: 'Blog', href: '/blog' },
+    { name: 'Contact', href: '/#contact' }
   ];
 
   const services = [
@@ -24,10 +26,19 @@ export const Footer = () => {
     'Cloud Integration'
   ];
 
-  const scrollToSection = (href) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+  const handleNavClick = (href) => {
+    if (href.startsWith("/#") || href === "/") {
+      if (window.location.pathname === "/") {
+        const id = href.replace("/", "");
+        const element = document.querySelector(id || "#home");
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      } else {
+        navigate(href);
+      }
+    } else {
+      navigate(href);
     }
   };
 
@@ -78,7 +89,7 @@ export const Footer = () => {
                 {quickLinks.map((link) => (
                   <li key={link.name}>
                     <button
-                      onClick={() => scrollToSection(link.href)}
+                      onClick={() => handleNavClick(link.href)}
                       className="text-slate-300 hover:text-teal-400 transition-colors duration-200 text-left"
                     >
                       {link.name}
@@ -124,7 +135,7 @@ export const Footer = () => {
 
               {/* CTA Button */}
               <button
-                onClick={() => scrollToSection('#contact')}
+                onClick={() => handleNavClick('/#contact')}
                 className="w-full bg-teal-600 hover:bg-teal-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg group flex items-center justify-center space-x-2"
               >
                 <span>Get Strategy Session</span>

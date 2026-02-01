@@ -14,6 +14,8 @@ const ServicesSection = lazy(() => import("./components/ServicesSection").then(m
 const CaseStudiesSection = lazy(() => import("./components/CaseStudiesSection").then(module => ({ default: module.CaseStudiesSection })));
 const TestimonialsSection = lazy(() => import("./components/TestimonialSection").then(module => ({ default: module.TestimonialsSection })));
 const BlogSection = lazy(() => import("./components/BlogSection").then(module => ({ default: module.BlogSection })));
+const BlogPage = lazy(() => import("./components/BlogPage").then(module => ({ default: module.BlogPage })));
+const BlogPostDetail = lazy(() => import("./components/BlogPostDetail").then(module => ({ default: module.BlogPostDetail })));
 const ContactSection = lazy(() => import("./components/ContactSection").then(module => ({ default: module.ContactSection })));
 
 const BACKEND_URL = import.meta.env.VITE_REACT_APP_BACKEND_URL || 'http://localhost:8001';
@@ -50,6 +52,26 @@ function App() {
               <>
                 <Header />
                 <ServiceDetail />
+                <Footer />
+                <Toaster />
+              </>
+            } />
+            <Route path="/blog" element={
+              <>
+                <Header />
+                <Suspense fallback={<div className="py-20 text-center">Loading Blog...</div>}>
+                  <BlogPage />
+                </Suspense>
+                <Footer />
+                <Toaster />
+              </>
+            } />
+            <Route path="/blog/:slug" element={
+              <>
+                <Header />
+                <Suspense fallback={<div className="py-20 text-center">Loading Article...</div>}>
+                  <BlogPostDetail />
+                </Suspense>
                 <Footer />
                 <Toaster />
               </>

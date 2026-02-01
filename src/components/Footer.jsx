@@ -3,6 +3,8 @@ import { Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import { mockData } from '../data/mock';
 
+import { Logo } from './Logo';
+
 export const Footer = () => {
   const { contactInfo, companyInfo } = mockData;
   const navigate = useNavigate();
@@ -53,9 +55,7 @@ export const Footer = () => {
             {/* Company Info */}
             <div className="lg:col-span-1">
               <div className="mb-6">
-                <h3 className="text-2xl font-bold text-white mb-2">
-                  AssuredPixel <span className="text-teal-400">Digital</span>
-                </h3>
+                <Logo className="h-10 mb-4" />
                 <p className="text-slate-300 leading-relaxed">
                   {companyInfo.tagline}
                 </p>

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Button } from "./ui/button";
 import { Menu, X, Moon, Sun } from "lucide-react";
+import { Logo } from "./Logo";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -79,12 +80,9 @@ export const Header = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="flex-shrink-0">
-              <h1 className="text-2xl font-bold text-slate-800 dark:text-white">
-                Assured
-                <span className="text-teal-600 dark:text-teal-400">Pixel</span>
-              </h1>
-            </div>
+            <Link to="/" onClick={() => handleNavClick("/")} className="flex-shrink-0">
+              <Logo className="h-9" />
+            </Link>
           </div>
 
           {/* Desktop Navigation */}

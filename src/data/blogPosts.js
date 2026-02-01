@@ -17,7 +17,7 @@ export const blogPosts = [
     author: "AssuredPixel Strategy Team",
     date: "2024-01-15",
     readTime: "15 min read",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop",
+    image: "/images/blog/digital-marketing.jpg",
     metaDescription: "The ultimate guide to 2024 digital marketing trends. Learn about AI personalization, short-form video, and community-driven branding strategies to scale your business.",
     fullContent: `
       <h2>The New Era of Multi-Channel Brand Consistency</h2>
@@ -66,7 +66,7 @@ export const blogPosts = [
     author: "AssuredPixel Creative Team",
     date: "2024-01-20",
     readTime: "12 min read",
-    image: "https://images.unsplash.com/photo-1547658719-da2b51169166?q=80&w=2464&auto=format&fit=crop",
+    image: "/images/blog/web-design.jpg",
     metaDescription: "Master the art of conversion-focused web design. From the 3-second rule to mobile-first optimization, learn how to build a website that drives sales.",
     fullContent: `
       <h2>Beyond "Pretty": Why Your Website Isn't Converting</h2>
@@ -116,7 +116,7 @@ export const blogPosts = [
     author: "AssuredPixel SEO Team",
     date: "2024-01-25",
     readTime: "18 min read",
-    image: "https://images.unsplash.com/photo-1551288049-bbbda536639a?q=80&w=2370&auto=format&fit=crop",
+    image: "/images/blog/seo-audit.jpg",
     metaDescription: "A comprehensive technical SEO audit checklist for small businesses. Improve your rankings by optimizing site structure, speed, and indexability.",
     fullContent: `
       <h2>The Foundation of Infinite Visibility</h2>
@@ -161,7 +161,7 @@ export const blogPosts = [
     author: "AssuredPixel Tech Team",
     date: "2024-02-01",
     readTime: "14 min read",
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2372&auto=format&fit=crop",
+    image: "/images/blog/cloud-integration.jpg",
     metaDescription: "Learn how cloud integration and business automation can help your company scale. Streamline your workflows and eliminate data silos with AssuredPixel.",
     fullContent: `
       <h2>The Silent Killer of Growth: Data Silos</h2>
@@ -198,7 +198,7 @@ export const blogPosts = [
     author: "AssuredPixel SEO Team",
     date: "2024-02-10",
     readTime: "20 min read",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2532&auto=format&fit=crop",
+    image: "/images/blog/google-sge.jpg",
     metaDescription: "Master Google SGE optimization. Learn how to rank in AI snapshots, optimize for conversational queries, and build technical authority in the AI search era.",
     fullContent: `
       <h2>The Shift from Blue Links to Generative Answers</h2>
@@ -240,7 +240,7 @@ export const blogPosts = [
     author: "AssuredPixel Strategy Team",
     date: "2024-02-15",
     readTime: "16 min read",
-    image: "https://images.unsplash.com/photo-1522542550221-31fd19251029?q=80&w=2670&auto=format&fit=crop",
+    image: "/images/blog/lead-gen.jpg",
     metaDescription: "The ultimate guide to redesigning your website for lead generation. Learn about high-converting UI/UX, lead magnets, and conversion tracking.",
     fullContent: `
       <h2>The Difference Between a Facelift and a Growth Engine</h2>

@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import {
   Card,
   CardContent,
@@ -88,6 +89,7 @@ const approachExamples = [
 ];
 
 export const CaseStudiesSection = () => {
+  const navigate = useNavigate();
   const [visibleItems, setVisibleItems] = useState(new Set());
   const observerRef = useRef(null);
 
@@ -153,12 +155,12 @@ export const CaseStudiesSection = () => {
                 data-animate
                 data-index={`card-${index}`}
                 className={`opacity-0 transition-all duration-700 ${visibleItems.has(`card-${index}`)
-                    ? "opacity-100 translate-x-0 translate-y-0"
-                    : index % 3 === 0
-                      ? "-translate-x-12 translate-y-8"
-                      : index % 3 === 1
-                        ? "translate-y-12"
-                        : "translate-x-12 translate-y-8"
+                  ? "opacity-100 translate-x-0 translate-y-0"
+                  : index % 3 === 0
+                    ? "-translate-x-12 translate-y-8"
+                    : index % 3 === 1
+                      ? "translate-y-12"
+                      : "translate-x-12 translate-y-8"
                   }`}
                 style={{
                   transitionDelay: `${index * 150}ms`,
@@ -277,11 +279,7 @@ export const CaseStudiesSection = () => {
               Let's discuss how our proven strategies can be tailored to your specific business goals and industry challenges.
             </p>
             <button
-              onClick={() =>
-                document
-                  .querySelector("#contact")
-                  ?.scrollIntoView({ behavior: "smooth" })
-              }
+              onClick={() => navigate("/#book-call")}
               className="bg-teal-600 hover:bg-teal-700 dark:bg-teal-500 dark:hover:bg-teal-600 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 hover:shadow-xl hover:shadow-teal-500/30 dark:hover:shadow-teal-400/30 hover:scale-105 active:scale-95"
             >
               Get Your Custom Strategy

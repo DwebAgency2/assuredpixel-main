@@ -11,12 +11,12 @@ export const Footer = () => {
 
   const quickLinks = [
     { name: 'Home', href: '/' },
-    { name: 'About', href: '/#about' },
     { name: 'Services', href: '/#services' },
-    { name: 'Case Studies', href: '/#case-studies' },
     { name: 'Testimonials', href: '/#testimonials' },
+    { name: 'About', href: '/about' },
+    { name: 'Case Studies', href: '/case-studies' },
     { name: 'Blog', href: '/blog' },
-    { name: 'Contact', href: '/#contact' }
+    { name: 'Contact', href: '/contact' }
   ];
 
   const services = [
@@ -135,7 +135,7 @@ export const Footer = () => {
 
               {/* CTA Button */}
               <button
-                onClick={() => handleNavClick('/#contact')}
+                onClick={() => handleNavClick('/#book-call')}
                 className="w-full bg-teal-600 hover:bg-teal-700 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 hover:shadow-lg group flex items-center justify-center space-x-2"
               >
                 <span>Get Strategy Session</span>

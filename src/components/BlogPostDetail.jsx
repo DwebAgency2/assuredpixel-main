@@ -153,7 +153,7 @@ export const BlogPostDetail = () => {
                             </p>
                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                 <Button
-                                    onClick={() => navigate("/#contact")}
+                                    onClick={() => navigate("/#book-call")}
                                     className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-6 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all"
                                 >
                                     Book Strategy Session

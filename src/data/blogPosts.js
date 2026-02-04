@@ -48,7 +48,7 @@ export const blogPosts = [
       <h2>The Roadmap to 2024 Implementation</h2>
       <p>To implement these trends effectively, start with a comprehensive audit of your current digital presence. Are your social media handles consistent? Does your website load in under 2 seconds? Is your content actually solving user problems?</p>
       
-      <p><strong>Ready to dominate your market?</strong> <a href="/#contact">Schedule a free strategy session</a> with our growth experts. We'll help you build a customized roadmap for 2024 that drives real, measurable results.</p>
+      <p><strong>Ready to dominate your market?</strong> <a href="/#book-call">Schedule a free strategy session</a> with our growth experts. We'll help you build a customized roadmap for 2024 that drives real, measurable results.</p>
 
       <h3>Frequently Asked Questions</h3>
       <div class="faq-section">
@@ -104,7 +104,7 @@ export const blogPosts = [
       <h2>A Checklist for Your Next Redesign</h2>
       <p>If you're considering a new site, ensure your team is looking at more than just the homepage. Every service page, blog post, and landing page needs to be optimized for the specific intent of the user.</p>
       
-      <p><strong>Is your website leaking leads?</strong> Get a <a href="/#contact">free growth audit</a> today. We'll identify the friction points in your current design and show you how to turn your traffic into revenue.</p>
+      <p><strong>Is your website leaking leads?</strong> Get a <a href="/#book-call">free growth audit</a> today. We'll identify the friction points in your current design and show you how to turn your traffic into revenue.</p>
     `
   },
   {
@@ -149,7 +149,7 @@ export const blogPosts = [
       <h2>Why Manual Audits Trump Automated Tools</h2>
       <p>While tools like SEMrush or Ahrefs are great, they often miss nuances in user intent and architectural logic. A human-led <a href="/services/search-engine-optimization">SEO audit</a> from the AssuredPixel team provides actionable insights that automated scanners simply can't catch.</p>
       
-      <p><strong>Stop guessing and start ranking.</strong> <a href="/#contact">Contact us today</a> for a professional technical SEO audit. We'll give you a prioritized roadmap to dominate your local and national competition.</p>
+      <p><strong>Stop guessing and start ranking.</strong> <a href="/#book-call">Contact us today</a> for a professional technical SEO audit. We'll give you a prioritized roadmap to dominate your local and national competition.</p>
     `
   },
   {
@@ -186,7 +186,7 @@ export const blogPosts = [
       <h2>How AssuredPixel Approaches Your Tech Stack</h2>
       <p>We don't just recommend tools; we build ecosystems. Our team analyzes your current workflow, identifies the bottlenecks, and builds a custom bridge between your favorite platforms. From Zapier and Make to custom API development, we ensure your business runs like a well-oiled machine.</p>
       
-      <p><strong>Ready to reclaim your time?</strong> Explore our <a href="/services/cloud-integration">cloud integration services</a> or <a href="/#contact">book a strategy session</a> to see how we can automate your path to scaling.</p>
+      <p><strong>Ready to reclaim your time?</strong> Explore our <a href="/services/cloud-integration">cloud integration services</a> or <a href="/#book-call">book a strategy session</a> to see how we can automate your path to scaling.</p>
     `
   },
   {
@@ -228,7 +228,7 @@ export const blogPosts = [
       <h2>Will SGE Kill Organic Traffic?</h2>
       <p>The short answer is: No, but it will change it. CTR for generic "what is" queries may drop, but traffic from users digging deeper into the SGE journey will be higher intent and more likely to convert. This is why a <a href="/services/website-construction">modern, fast website</a> is essential for capturing these high-value leads.</p>
 
-      <p><strong>Is your SEO strategy SGE-ready?</strong> <a href="/#contact">Book an SGE Strategy Audit</a> with AssuredPixel. We'll help you future-proof your rankings for the AI search revolution.</p>
+      <p><strong>Is your SEO strategy SGE-ready?</strong> <a href="/#book-call">Book an SGE Strategy Audit</a> with AssuredPixel. We'll help you future-proof your rankings for the AI search revolution.</p>
     `
   },
   {
@@ -270,7 +270,7 @@ export const blogPosts = [
       <h2>Setting Realistic Expectations for Your Redesign</h2>
       <p>A successful redesign isn't a "set and forget" project. It's the beginning of a continuous improvement cycle. We use A/B testing and data analytics to refine your lead generation engine month after month.</p>
 
-      <p><strong>Ready to turn your website into a lead machine?</strong> <a href="/#contact">Contact AssuredPixel today</a>. We'll build a redesign strategy that focuses on ROI, lead quality, and business growth.</p>
+      <p><strong>Ready to turn your website into a lead machine?</strong> <a href="/#book-call">Contact AssuredPixel today</a>. We'll build a redesign strategy that focuses on ROI, lead quality, and business growth.</p>
     `
   }
 ];

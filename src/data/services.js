@@ -3,111 +3,75 @@ import {
     Globe,
     Search,
     FileText,
-    MessageCircle,
-    Cloud,
+    TrendingUp,
+    Target,
 } from "lucide-react";
 
 export const services = [
     {
         id: 1,
-        title: "Business Branding & Strategy",
-        slug: "business-branding-strategy",
+        title: "Lead Generation",
+        slug: "lead-generation",
         description:
-            "Your brand is more than a logo. It’s how people recognize, trust, and remember your business. We help startups and small businesses define a clear brand voice, visual identity, and positioning that reflects your value and connects with the right audience.",
-        longDescription: "In today's crowded market, a strong brand is your most valuable asset. Our Business Branding & Strategy service goes beyond aesthetics to uncover the core identity of your business. We work closely with you to define your mission, vision, and values, translating them into a cohesive visual and verbal identity. From logo design and color palettes to tone of voice guidelines and market positioning, we ensure every touchpoint communicates your unique value proposition effectively. Whether you're launching a new startup or rebranding an established business, we build brands that resonate, inspire trust, and drive long-term loyalty.",
-        icon: Brush,
-        features: [
-            "Logo & visual identity design",
-            "Brand voice & messaging strategy",
-            "Brand identity for startups",
-            "Market positioning & analysis",
-            "Brand style guides",
-            "Rebranding consultation"
-        ],
+            "We identify and connect you with potential customers to drive sales and revenue growth. Our solutions generate high-quality calls and email referrals through custom-designed strategies and deep keyword research.",
+        longDescription: `Stop paying for shared leads and starting owning your market. Our lead generation system is built for business owners who are tired of the "pay-per-lead" sites that sell the same inquiry to five different contractors. We do things differently. We build high-performing digital systems that attract exclusive leads—people looking for your exact services in your specific service area.
+
+Every lead we generate is tracked and recorded, giving you 24/7 access to monitor quality and train your staff. Whether it's phone calls or email referrals, we prioritize high-intent users who are ready to book. By managing the upfront work of keyword research and conversion design, we free you up to do what you do best: closing jobs and growing your revenue. With flexible performance-based options, our goal is to become your long-term growth partner, only succeeding when your phone is ringing.`,
+        icon: Target,
     },
     {
         id: 2,
-        title: "Responsive Web Design Services",
-        slug: "responsive-web-design",
+        title: "Web Design",
+        slug: "web-design",
         description:
-            "Your website is your 24/7 salesperson. We design and develop conversion-focused, responsive websites that look great on any device. From fast-loading WordPress sites to custom builds, we ensure your site turns visitors into leads.",
-        longDescription: "A website should be more than just a digital brochure; it should be a powerful engine for growth. Our Responsive Web Design service focuses on creating user-centric experiences that look stunning and perform flawlessly across all devices—desktops, tablets, and smartphones. We prioritize speed, accessibility, and conversion optimization, ensuring that visitors not only stay on your site but also take action. Whether you need a sleek brochure site, a robust e-commerce platform, or a custom web application, our designs are built to scale with your business and deliver measurable results.",
+            "Creating visually appealing and user-friendly websites that represent your brand effectively. We build high-performing digital assets that turn visitors into loyal customers through modern design and conversion optimization.",
+        longDescription: `Your website isn't just an online business card; it's the heartbeat of your digital presence. In a local market, trust is everything. If your site looks dated or doesn't work on a phone, potential customers will bounce to your competitors in seconds. We specialize in building custom-designed websites that bridge the gap between "looking good" and "making money."
+
+Our process starts with deep keyword research to ensure your site is built on a foundation of what your customers are actually searching for. We focus on mobile-first design, lightning-fast load speeds, and intuitive navigation that leads visitors straight to your "Book Now" or "Call Today" buttons. From clear brand representation to high-converting user interfaces, we ensure that every visitor feels confident in your professionalism the moment they land on your page.`,
         icon: Globe,
-        features: [
-            "Custom responsive web design",
-            "Fast-loading performance optimized",
-            "Conversion-focused layouts (UI/UX)",
-            "Mobile-first development",
-            "WordPress & Custom React builds",
-            "Accessibility compliance (WCAG)"
-        ],
     },
     {
         id: 3,
-        title: "Technical SEO & Audit Services",
-        slug: "technical-seo-audit",
+        title: "SEO Ranking",
+        slug: "seo-ranking",
         description:
-            "Stop guessing why you aren't ranking. Our comprehensive SEO services include technical audits, keyword optimization, and on-page strategy to help your small business rank higher on Google and attract organic traffic.",
-        longDescription: "Search Engine Optimization (SEO) is the backbone of online visibility. Our Technical SEO & Audit services dig deep into the architecture of your website to identify and fix issues that are holding you back from ranking. We conduct comprehensive audits covering site speed, mobile usability, crawlability, and indexability. Beyond just fixing errors, we implement strategic on-page optimizations, including meta tag improvements, schema markup, and internal linking strategies. Our goal is to ensure search engines can fully understand and prioritize your content, driving sustainable organic traffic to your business.",
+            "Enhance your online visibility and attract targeted traffic. We implement advanced search engine optimization strategies to ensure your business ranks high on search results, putting you right in front of your ideal audience.",
+        longDescription: `If your business isn't on the first page of Google, you are invisible to the majority of your local market. SEO ranking is about more than just "optimizing title tags"—it's about dominating your local territory. We implement a multi-layered SEO strategy that combines deep technical optimization with local authority building.
+
+The centerpiece of our local strategy is Google Business Profile optimization. We go beyond the basics, managing your descriptions, photos, and reviews to ensure you show up in the "Map Pack" where the majority of clicks happen. We also build dedicated service-location pages that help you rank for specific neighborhoods and towns. By focusing on both the technical "under-the-hood" SEO and the local citations that search engines trust, we build a sustainable, long-term asset that keeps your brand at the top of the search results for years to come.`,
         icon: Search,
-        features: [
-            "Comprehensive technical SEO audits",
-            "On-page keyword optimization",
-            "Local SEO for small business",
-            "Core Web Vitals optimization",
-            "Schema markup implementation",
-            "Competitor analysis & tracking"
-        ],
     },
     {
         id: 4,
-        title: "SEO Content Writing & Strategy",
-        slug: "seo-content-writing",
+        title: "Google & Facebook Ads",
+        slug: "google-facebook-ads",
         description:
-            "Content that ranks and converts. We create clear, engaging content that explains your value and satisfies user intent. From website copy to SEO-optimized blog posts, we help you build authority in your niche.",
-        longDescription: "Content is King, but only when it aligns with what your audience is searching for. Our SEO Content Writing & Strategy service bridges the gap between creativity and data. We start with in-depth keyword research to understand user intent, then craft compelling, high-quality content that answers questions and solves problems. From persuasive landing page copy to educational blog posts and whitepapers, every piece we write is optimized to rank well on Google while engaging human readers. We help you establish authority in your industry, build trust with your audience, and drive conversions through the power of words.",
-        icon: FileText,
-        features: [
-            "Website copywriting that converts",
-            "SEO-friendly blog content & articles",
-            "Content strategy & editorial planning",
-            "Keyword research & topic clustering",
-            "Meta description & title tag writing",
-            "Existing content optimization"
-        ],
+            "Strategic advertising campaigns to target your ideal audience, increase brand awareness, and drive immediate conversions. We maximize your ROI through measurable and highly targeted performance marketing.",
+        longDescription: `Why wait months for organic rankings when you can get customers today? Paid advertising is the fastest way to scale a local business, but only if it's managed with precision. We specialize in Google Local Services Ads and Facebook targeted campaigns that connect you with high-quality leads at the exact moment they need your help.
+
+Google Ads allow you to skip the line and appear at the very top of the search results, often with the "Google Guaranteed" badge that builds instant credibility. On the other hand, Facebook Ads allow us to target your ideal customer based on their interests and bridge the gap of brand awareness. We don't just "boost posts"—we create data-driven campaigns with A/B testing and strict budget management. Our goal is a positive ROI, ensuring every dollar you invest translates into trackable revenue and measurable business growth.`,
+        icon: TrendingUp,
     },
     {
         id: 5,
-        title: "Social Media Management",
-        slug: "social-media-management",
+        title: "Content Writing",
+        slug: "content-writing",
         description:
-            "Social media is about building real relationships, not just posting content. We manage your social presence by creating and sharing content that drives engagement, strengthens brand awareness, and supports your broader marketing goals.",
-        longDescription: "In a connected world, your business needs to be where your customers are. Our Social Media Management service takes the stress out of maintaining an active online presence. We develop tailored strategies for platforms like Instagram, LinkedIn, Facebook, and X (Twitter) that align with your brand voice. We handle everything from content creation and graphic design to community management and scheduling. By consistently sharing valuable content and engaging with your followers, we help you build a loyal community, increase brand awareness, and drive traffic back to your website.",
-        icon: MessageCircle,
-        features: [
-            "Custom content creation & graphics",
-            "Multi-platform scheduling & posting",
-            "Audience engagement & community management",
-            "Performance tracking & analytics reporting",
-            "Social media strategy development",
-            "Paid social ad campaign management"
-        ],
+            "Providing professional and high-quality written material to enhance your online presence and engage your target audience. We craft persuasive copy that tells your story and satisfies both users and search engines.",
+        longDescription: `Words have the power to sell when you're busy running your business. Our content writing service provides professional, high-quality material that satisfies both your human visitors and the search engine algorithms. We don't just write fluff; we write persuasive copy that addresses your customers' pain points and positions you as the solution.
+
+By combining keyword-rich blog posts with authoritative service page copy, we help you build the "E-E-A-T" (Experience, Expertise, Authoritativeness, and Trustworthiness) that Google looks for when deciding who to rank. Whether it's telling your brand's unique story, explaining a complex service, or writing educational articles that solve local problems, our content is designed to build the deep trust required to turn a casual browser into a committed client.`,
+        icon: FileText,
     },
     {
         id: 6,
-        title: "Cloud Integration & DevOps",
-        slug: "cloud-integration",
+        title: "Branding & Strategy",
+        slug: "branding-strategy",
         description:
-            "Modern businesses rely on connected, flexible systems. Our cloud integration services help streamline workflows, improve collaboration, and ensure your tools work seamlessly together, creating a scalable foundation for growth.",
-        longDescription: "Efficiency is the key to scaling your business. Our Cloud Integration & DevOps services focus on connecting your disparate software tools and systems into a unified, automated ecosystem. We help you migrate to the cloud, set up secure infrastructure, and integrate apps like CRMs, marketing automation platforms, and analytics tools. Whether you need to streamline internal workflows, improve data security, or ensure high availability for your applications, our technical experts build the robust, scalable foundation your business needs to grow without technical debt.",
-        icon: Cloud,
-        features: [
-            "App & software tool integration",
-            "Secure cloud data migration",
-            "Scalable cloud infrastructure setup",
-            "Workflow automation & optimization",
-            "DevOps best practices implementation",
-            "API development & connection"
-        ],
+            "Command respect with a professional brand identity. We help businesses define their unique value and create a visual presence that resonates with their community and ensures they stay top-of-mind.",
+        longDescription: `In a crowded local market, your brand is what makes you the only logical choice. Many businesses have a logo, but few have a "brand." Strategic branding is about defining your "Why," your visual identity, and your promise to the customer. We help you create a visual presence that commands respect and resonates with your community.
+
+Our strategy work involves analyzing your competition and finding the gaps they are ignoring. We then build a cohesive brand system—from logo and typography to your tone of voice and market positioning. When your brand looks and feels premium, you can command higher prices, attract better employees, and build a lasting reputation that survives on more than just "being the cheapest option." We help you become the business that stays top-of-mind whenever a local customer needs your expertise.`,
+        icon: Brush,
     },
 ];

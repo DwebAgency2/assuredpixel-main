@@ -49,12 +49,12 @@ export const Header = () => {
 
   const navigation = [
     { name: "Home", href: "/", isExternal: true },
-    { name: "About", href: "/#about", isExternal: true },
     { name: "Services", href: "/#services", isExternal: true },
-    { name: "Case Studies", href: "/#case-studies", isExternal: true },
     { name: "Testimonials", href: "/#testimonials", isExternal: true },
+    { name: "About", href: "/about", isExternal: true },
+    { name: "Case Studies", href: "/case-studies", isExternal: true },
     { name: "Blog", href: "/blog", isExternal: true },
-    { name: "Contact", href: "/#contact", isExternal: true },
+    { name: "Contact", href: "/contact", isExternal: true },
   ];
 
   const handleNavClick = (href) => {
@@ -113,7 +113,7 @@ export const Header = () => {
 
             {/* CTA Button */}
             <Button
-              onClick={() => handleNavClick("/#contact")}
+              onClick={() => handleNavClick("/#book-call")}
               className="bg-teal-600 hover:bg-teal-700 dark:bg-teal-500 dark:hover:bg-teal-600 text-white px-6 py-2 rounded-lg transition-all duration-300 hover:shadow-lg hover:scale-105"
             >
               Book Free Audit
@@ -156,7 +156,7 @@ export const Header = () => {
               ))}
               <div className="pt-4">
                 <Button
-                  onClick={() => handleNavClick("/#contact")}
+                  onClick={() => handleNavClick("/#book-call")}
                   className="bg-teal-600 hover:bg-teal-700 dark:bg-teal-500 dark:hover:bg-teal-600 text-white px-6 py-2 rounded-lg w-full transition-all duration-300"
                 >
                   Book Free Audit

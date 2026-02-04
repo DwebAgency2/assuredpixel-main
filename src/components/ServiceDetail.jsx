@@ -40,12 +40,13 @@ export const ServiceDetail = () => {
     };
 
     const handleBackToServices = (e) => {
-        e.preventDefault();
-        navigate("/");
-        // Wait for navigation, then scroll to services
-        setTimeout(() => {
-            document.getElementById("services")?.scrollIntoView({ behavior: "smooth" });
-        }, 100);
+        if (e && e.preventDefault) e.preventDefault();
+        navigate("/#services");
+    };
+
+    const handleBookCall = (e) => {
+        if (e && e.preventDefault) e.preventDefault();
+        navigate("/#book-call");
     };
 
     return (
@@ -114,31 +115,14 @@ export const ServiceDetail = () => {
                                 <p className="text-xl leading-relaxed">{service.longDescription}</p>
                             </div>
 
-                            <div className="pt-6">
-                                <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4">
-                                    What's Included?
-                                </h3>
-                                <ul className="space-y-3">
-                                    {service.features.map((feature, index) => (
-                                        <li key={index} className="flex items-start space-x-3">
-                                            <CheckCircle className="w-6 h-6 text-teal-600 dark:text-teal-400 flex-shrink-0 mt-0.5" />
-                                            <span className="text-lg text-slate-700 dark:text-slate-300">
-                                                {feature}
-                                            </span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
 
                             <div className="pt-8">
                                 <Button
-                                    onClick={() =>
-                                        document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" }) || navigate("/#contact")
-                                    }
+                                    onClick={handleBookCall}
                                     size="lg"
                                     className="bg-teal-600 hover:bg-teal-700 dark:bg-teal-500 dark:hover:bg-teal-600 text-white px-8 py-6 text-lg rounded-xl shadow-lg hover:shadow-xl transition-all hover:scale-105"
                                 >
-                                    Get Started with {service.title}
+                                    Book Your Strategic Call
                                 </Button>
                             </div>
                         </motion.div>
@@ -155,6 +139,9 @@ export const ServiceDetail = () => {
                                     src={`/service-images/${service.slug}.jpg`}
                                     alt={service.title}
                                     className="w-full h-full object-cover"
+                                    loading="lazy"
+                                    width="800"
+                                    height="600"
                                     onError={(e) => {
                                         // Fallback to icon if image fails to load
                                         e.target.style.display = 'none';

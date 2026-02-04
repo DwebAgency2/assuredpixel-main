@@ -27,10 +27,11 @@ const iconMap = {
   Cloud,
 };
 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { services } from "../data/services";
 
 export const ServicesSection = () => {
+  const navigate = useNavigate();
 
   // Animation variants
   const containerVariants = {
@@ -170,48 +171,6 @@ export const ServicesSection = () => {
                       </CardDescription>
                     </CardHeader>
 
-                    <CardContent>
-                      <motion.ul
-                        className="space-y-3"
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true }}
-                        variants={{
-                          visible: {
-                            transition: {
-                              staggerChildren: 0.08,
-                              delayChildren: 0.2,
-                            },
-                          },
-                        }}
-                      >
-                        {service.features.map((feature, featureIndex) => (
-                          <motion.li
-                            key={featureIndex}
-                            className="flex items-center space-x-3"
-                            variants={{
-                              hidden: { opacity: 0, x: -20 },
-                              visible: {
-                                opacity: 1,
-                                x: 0,
-                                transition: {
-                                  duration: 0.4,
-                                },
-                              },
-                            }}
-                            whileHover={{
-                              x: 5,
-                              transition: { duration: 0.2 },
-                            }}
-                          >
-                            <CheckCircle className="w-4 h-4 text-teal-600 dark:text-teal-400 flex-shrink-0" />
-                            <span className="text-sm text-slate-700 dark:text-slate-300 font-medium">
-                              {feature}
-                            </span>
-                          </motion.li>
-                        ))}
-                      </motion.ul>
-                    </CardContent>
 
                     {/* Hover Effect Background */}
                     <div className="absolute inset-0 bg-gradient-to-br from-teal-50 to-emerald-50 dark:from-teal-900/20 dark:to-emerald-900/20 rounded-lg opacity-0 group-hover:opacity-10 dark:group-hover:opacity-30 transition-opacity duration-300 -z-10"></div>
@@ -266,11 +225,7 @@ export const ServicesSection = () => {
             </motion.p>
 
             <motion.button
-              onClick={() =>
-                document
-                  .querySelector("#contact")
-                  ?.scrollIntoView({ behavior: "smooth" })
-              }
+              onClick={() => navigate("/#book-call")}
               className="bg-teal-600 hover:bg-teal-700 dark:bg-teal-500 dark:hover:bg-teal-600 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 hover:shadow-lg"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

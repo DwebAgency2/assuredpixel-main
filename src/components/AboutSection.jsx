@@ -1,6 +1,6 @@
 
-// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import { CheckCircle, Target, Users, Award } from "lucide-react";
 
 // Mock data for demo
@@ -21,6 +21,7 @@ const mockData = {
 
 export const AboutSection = () => {
   const { companyInfo } = mockData;
+  const navigate = useNavigate();
 
   const values = [
     {
@@ -188,11 +189,7 @@ export const AboutSection = () => {
             {/* CTA */}
             <motion.div className="pt-4" variants={fadeInUp}>
               <motion.button
-                onClick={() =>
-                  document
-                    .querySelector("#contact")
-                    ?.scrollIntoView({ behavior: "smooth" })
-                }
+                onClick={() => navigate("/#book-call")}
                 className="bg-teal-600 hover:bg-teal-700 dark:bg-teal-500 dark:hover:bg-teal-600 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 hover:shadow-lg"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}

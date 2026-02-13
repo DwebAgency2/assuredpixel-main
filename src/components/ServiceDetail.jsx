@@ -136,7 +136,7 @@ export const ServiceDetail = () => {
                         >
                             <div className="aspect-[4/3] bg-gradient-to-br from-teal-50 to-emerald-50 dark:from-slate-800 dark:to-slate-900 rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-xl">
                                 <img
-                                    src={`/service-images/${service.slug}.jpg`}
+                                    src={service.image}
                                     alt={service.title}
                                     className="w-full h-full object-cover"
                                     loading="lazy"

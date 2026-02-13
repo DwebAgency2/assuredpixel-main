@@ -7,10 +7,10 @@ import { CheckCircle, Target, Users, Award } from "lucide-react";
 const mockData = {
   companyInfo: {
     description:
-      "AssuredPixel transforms underperforming websites into high-converting digital assets, consistently generating qualified leads for USA-based businesses.",
+      "AssuredPixel transforms underperforming websites into high-converting digital assets, giving USA businesses a competitive advantage through exclusive lead generation and search dominance.",
     founded: "2020",
     clientsServed: "150+",
-    averageGrowth: "180%",
+    averageGrowth: "180% in Exclusive Leads",
   },
   teamMembers: [
     { name: "John Doe", image: "https://i.pravatar.cc/150?img=33" },
@@ -138,7 +138,7 @@ export const AboutSection = () => {
                 variants={fadeInUp}
                 className="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-white mb-6"
               >
-                Your Partner in Digital Success
+                Your Competitive Advantage
               </motion.h2>
 
               <motion.p
@@ -153,11 +153,10 @@ export const AboutSection = () => {
                 className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed"
               >
                 Founded in {companyInfo.founded}, we've helped over{" "}
-                {companyInfo.clientsServed} businesses transform their online
-                presence through integrated branding, custom web design, and
-                data-driven digital marketing. On average, our clients experience{" "}
-                {companyInfo.averageGrowth} growth in online visibility and
-                qualified lead generation.
+                {companyInfo.clientsServed} businesses dominate their local
+                markets through integrated branding, conversion-focused design, and
+                results-driven SEO. On average, our clients experience{" "}
+                {companyInfo.averageGrowth} and online visibility.
               </motion.p>
             </div>
 

@@ -7,11 +7,11 @@ import { ArrowRight, CheckCircle } from "lucide-react";
 // Mock data for demo
 const mockData = {
   heroContent: {
-    headline: "Grow Your Business with Strategy-Led Digital Marketing",
+    headline: "Results-First Growth Partners for Modern Businesses",
     subheadline:
-      "We help small businesses and startups in the USA attract the right audience, improve conversions, and scale with branding, web design, SEO, and full-funnel marketing strategies.",
+      "Stop paying for shared leads. Own your market with a custom-built growth engine that delivers exclusive calls and high-intent customers directly to your business.",
     ctaText: "Get Your Free Strategy Session",
-    ctaSubtext: "✨ No pressure • Clear next steps • Practical recommendations",
+    ctaSubtext: "✨ No pressure • Triple your lead volume • Practical recommendations",
   },
 };
 

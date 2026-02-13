@@ -142,25 +142,33 @@ export const ServicesSection = () => {
               >
                 <Link to={`/services/${service.slug}`} className="block h-full">
                   <Card className="relative group h-full hover:shadow-2xl transition-all duration-300 border-slate-200 dark:border-slate-700 hover:border-teal-200 dark:hover:border-teal-600 bg-white dark:bg-slate-900">
-                    <CardHeader className="pb-4">
-                      <div className="flex items-center space-x-4 mb-4">
-                        <motion.div
-                          className="w-12 h-12 bg-teal-100 dark:bg-teal-900/50 rounded-xl flex items-center justify-center group-hover:bg-teal-600 dark:group-hover:bg-teal-500 transition-colors duration-300"
-                          whileHover={{
-                            rotate: [0, -10, 10, -10, 0],
-                            transition: { duration: 0.5 },
-                          }}
-                        >
-                          <IconComponent className="w-6 h-6 text-teal-600 dark:text-teal-400 group-hover:text-white transition-colors duration-300" />
-                        </motion.div>
-                        <motion.div
-                          className="w-8 h-1 bg-teal-600 dark:bg-teal-500 rounded-full opacity-20 group-hover:opacity-100 transition-opacity duration-300"
-                          initial={{ width: 0 }}
-                          whileInView={{ width: 32 }}
-                          transition={{ duration: 0.5, delay: index * 0.1 }}
-                          viewport={{ once: true }}
-                        ></motion.div>
+                    <div className="relative h-48 overflow-hidden rounded-t-2xl">
+                      <img
+                        src={service.image}
+                        alt={service.title}
+                        loading="lazy"
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+                        <div className="flex items-center space-x-4">
+                          <motion.div
+                            className="w-10 h-10 bg-teal-500/90 backdrop-blur-sm rounded-lg flex items-center justify-center text-white"
+                            whileHover={{ scale: 1.1 }}
+                          >
+                            <IconComponent className="w-5 h-5" />
+                          </motion.div>
+                          <motion.div
+                            className="w-8 h-1 bg-teal-400 rounded-full"
+                            initial={{ width: 0 }}
+                            whileInView={{ width: 32 }}
+                            transition={{ duration: 0.5, delay: index * 0.1 }}
+                            viewport={{ once: true }}
+                          ></motion.div>
+                        </div>
                       </div>
+                    </div>
+
+                    <CardHeader className="pb-4">
 
                       <CardTitle className="text-xl font-bold text-slate-900 dark:text-white group-hover:text-teal-900 dark:group-hover:text-teal-300 transition-colors duration-300">
                         {service.title}

@@ -154,11 +154,11 @@ export const ContactSection = () => {
             Get Started Today
           </div>
           <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 dark:text-slate-50 mb-6 transition-colors duration-300">
-            Ready to Transform Your Business?
+            Ready to Dominate Your Local Market?
           </h2>
           <p className="text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto leading-relaxed transition-colors duration-300">
-            Book your free strategy session and discover how we can help your business
-            scale its brand, attract more customers, and grow faster online.
+            Book your free session and discover how to stop paying for shared leads and
+            start generating exclusive, high-intent results for your business.
           </p>
         </div>
 

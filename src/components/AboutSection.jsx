@@ -10,13 +10,7 @@ const mockData = {
       "AssuredPixel transforms underperforming websites into high-converting digital assets, giving USA businesses a competitive advantage through exclusive lead generation and search dominance.",
     founded: "2020",
     clientsServed: "150+",
-    averageGrowth: "180% in Exclusive Leads",
   },
-  teamMembers: [
-    { name: "John Doe", image: "https://i.pravatar.cc/150?img=33" },
-    { name: "Jane Smith", image: "https://i.pravatar.cc/150?img=47" },
-    { name: "Mike Johnson", image: "https://i.pravatar.cc/150?img=12" },
-  ],
 };
 
 export const AboutSection = () => {
@@ -99,17 +93,6 @@ export const AboutSection = () => {
     },
   };
 
-  const scaleIn = {
-    hidden: { opacity: 0, scale: 0.8 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        duration: 0.5,
-        ease: "easeOut",
-      },
-    },
-  };
 
   return (
     <section
@@ -247,61 +230,6 @@ export const AboutSection = () => {
               );
             })}
 
-            {/* Team Image Placeholder */}
-            <motion.div
-              variants={scaleIn}
-              whileHover={{ scale: 1.02 }}
-              className="relative bg-white dark:bg-slate-800 rounded-2xl p-8 shadow-lg border border-slate-200 dark:border-slate-700 text-center transition-colors duration-300"
-            >
-              <div className="w-full h-32 bg-gradient-to-r from-teal-100 via-emerald-100 to-teal-100 dark:from-teal-900/30 dark:via-emerald-900/30 dark:to-teal-900/30 rounded-xl flex items-center justify-center mb-4">
-                {/* Small round images in one card */}
-                <motion.div
-                  className="flex justify-center gap-3 sm:gap-6 mb-4"
-                  variants={staggerContainer}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true }}
-                >
-                  {mockData.teamMembers.map((member, index) => (
-                    <motion.img
-                      key={index}
-                      src={member.image}
-                      alt={member.name}
-                      className="w-16 h-16 sm:w-24 sm:h-24 rounded-full object-cover border-2 border-teal-200 dark:border-teal-600 flex-shrink-0"
-                      variants={{
-                        hidden: { opacity: 0, scale: 0, rotate: -180 },
-                        visible: {
-                          opacity: 1,
-                          scale: 1,
-                          rotate: 0,
-                          transition: {
-                            duration: 0.6,
-                            delay: index * 0.15,
-                            ease: "easeOut",
-                          },
-                        },
-                      }}
-                      whileHover={{
-                        scale: 1.15,
-                        rotate: 5,
-                        transition: { duration: 0.3 },
-                      }}
-                    />
-                  ))}
-                </motion.div>
-              </div>
-
-              <motion.p
-                className="text-slate-600 dark:text-slate-400 text-sm"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.6, duration: 0.5 }}
-              >
-                Meet our dedicated team of digital growth experts and strategists
-                committed to your business success.
-              </motion.p>
-            </motion.div>
           </motion.div>
         </div>
       </div>

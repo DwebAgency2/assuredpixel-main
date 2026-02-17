@@ -230,29 +230,4 @@ export const mockData = {
     address: "123 Digital Avenue, Austin, TX 78701",
     hours: "Monday – Friday: 9:00 AM – 6:00 PM CST",
   },
-
-  // Team Members
-  teamMembers: [
-    {
-      id: 1,
-      name: "Alice Johnson",
-      role: "SEO Specialist",
-      image:
-        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=250&fit=crop",
-    },
-    {
-      id: 2,
-      name: "Bob Smith",
-      role: "Digital Strategist",
-      image:
-        "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=400&h=250&fit=crop",
-    },
-    {
-      id: 3,
-      name: "Carol Lee",
-      role: "Content Manager",
-      image:
-        "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=400&h=250&fit=crop",
-    },
-  ],
 };
